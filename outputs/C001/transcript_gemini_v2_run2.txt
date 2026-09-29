@@ -1,0 +1,5 @@
+Model: gemini-3.8-flash
+Run date: 2026-09-29T15:21:43+05:30
+Prompt file: transcribe_v2.txt
+
+Hi, my name is uh Devanshi Rawat and I'm from Ahmedabad, Gujarat. Talking about my future goals, I want to grow both personally and professionally. I want to build a successful career, become more confident, and keep learning new things. I also want to inspire people around me through my journey and encourage them to believe in themselves. I want to be a part of Miss Ananti because I see it as a great opportunity to challenge myself, gain confidence, learn new things, and grow as a person. I would also love to represent myself and my city with confidence and make this journey a memorable experience. Thank you.

@@ -1,0 +1,5 @@
+Model: gemini-3.8-flash
+Run date: 2026-09-29T15:10:18+05:30
+Prompt file: transcribe_v2.txt
+
+Hi everyone, my name is Gayatri Vyas. I am from Ahmedabad, Gujarat. My goal is to grow as a professional model, work with great brands, and continuously improve my skills and confidence. Uh I want to be a part of Miss Ananti India because it is a great opportunity for me to express myself, uh to meet new peoples, and and want to face new challenges through this journey.

@@ -1,0 +1,8 @@
+Transcribe this audio exactly as spoken. Keep the language(s) as spoken
+(Hindi, English, or mixed). Do not translate, do not correct grammar,
+do not summarize, do not add anything. Keep filler words. If a part is
+unclear, write [unclear] instead of guessing.
+
+Context for spelling only: the event name is "Miss Ananti India". If the speaker
+says this event name, write it with this spelling. Do not insert the event name
+anywhere it was not spoken.
