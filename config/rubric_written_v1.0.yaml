@@ -1,0 +1,143 @@
+# Source: docs/Miss_Ananti_Written_Screening_Framework_v1_0.docx
+{
+  "questions": {
+    "Q1": "Tell us about a time you took initiative for something that mattered to you. What did you do, and what did you learn?",
+    "Q2": "Tell us about a time you disagreed with people around you, or changed your own mind, about something important. What was your reasoning?",
+    "Q3": "What is one belief about beauty you would like girls to grow up without? Why, and how would you challenge it?",
+    "Q4": "What is one problem you have personally noticed that affects people around you? Why does it matter to you, and what realistic first step would you take?",
+    "Q5": "What is one thing about yourself you are actively working to improve, and what are you doing about it?"
+  },
+  "parameters": {
+    "SA": {
+      "name": "Self-awareness (SA)",
+      "what_earns_marks": "Understands her own choices, motivations, limitations and learning.",
+      "levels": {
+        "0": "No evidence",
+        "2": "Generic self-description",
+        "4": "Names a real choice, motivation or limitation of her own",
+        "6": "Explains what she learned, with a concrete example",
+        # TODO_BD: SA level 8 asks for consistency across answers; Section 7 says "judging only that answer". Unresolved.
+        "8": "Specific reflection showing how an experience changed what she does; consistent across answers"
+      }
+    },
+    "CR": {
+      "name": "Clarity and reasoning (CR)",
+      "what_earns_marks": "Makes a clear point, in any language, and supports it with a reason.",
+      "levels": {
+        "0": "Off-topic or no point",
+        "2": "Opinion with no reason, or point hard to follow",
+        "4": "Clear point with a relevant reason",
+        "6": "Reason grounded in her own observation or example",
+        "8": "Considers another view or trade-off; clear logic throughout"
+      }
+    },
+    "EV": {
+      "name": "Empathy and values (EV)",
+      "what_earns_marks": "Understands the people affected; respects choices different from her own.",
+      "levels": {
+        "0": "No evidence",
+        "2": "Names a cause or label only",
+        "4": "Identifies who is affected",
+        "6": "Shows why or how it affects them",
+        "8": "Recognises differing circumstances, respects others’ choices, considers consequences"
+      }
+    },
+    "IJ": {
+      "name": "Initiative and judgment (IJ)",
+      "what_earns_marks": "Has acted, or proposes a realistic step within her means, at any scale.",
+      "levels": {
+        "0": "No action mentioned",
+        "2": "Vague intention",
+        "4": "Concrete action, feasibility unclear",
+        "6": "Realistic step within her means that fits the problem, or has already acted",
+        "8": "Has acted and reflected on the result, or realistic step plus how she’d know it worked"
+      }
+    },
+    "CV": {
+      "name": "Conviction and personal voice (CV)",
+      "what_earns_marks": "Takes a clear position she owns; answers are specific to her life, not generic.",
+      "levels": {
+        "0": "No position; entirely generic",
+        "2": "Slogans or stock phrases that could be anyone’s",
+        "4": "Clear position or goal with at least one personal detail",
+        "6": "Owns a clear stance; answers rooted in specific personal detail",
+        # TODO_BD: CV level 8 asks for consistency across answers; Section 7 says "judging only that answer". Unresolved.
+        "8": "Consistent conviction across answers, distinctly her own, persuasive"
+      }
+    }
+  },
+  # TODO_BD: Section 5 allows odd levels; Section 7 lists only 0/2/4/6/8. Unresolved.
+  "level_instructions": "Each active cell is scored at one of five levels. Odd numbers may be used when an answer falls between two levels.",
+  "weight_instructions": "Weights are percentages within each question; blank cells are not scored for that question. Each question carries equal weight: 20% of the written score, or 8 of the 40 marks.",
+  "weight_matrix": {
+    "Q1": {
+      "SA": "20%",
+      "CR": "15%",
+      "EV": "10%",
+      "IJ": "40%",
+      "CV": "15%"
+    },
+    "Q2": {
+      "SA": "25%",
+      "CR": "45%",
+      "EV": "10%",
+      "IJ": null,
+      "CV": "20%"
+    },
+    "Q3": {
+      "SA": null,
+      "CR": "25%",
+      "EV": "40%",
+      "IJ": "15%",
+      "CV": "20%"
+    },
+    "Q4": {
+      "SA": null,
+      "CR": "15%",
+      "EV": "30%",
+      "IJ": "40%",
+      "CV": "15%"
+    },
+    "Q5": {
+      "SA": "50%",
+      "CR": null,
+      "EV": null,
+      "IJ": "20%",
+      "CV": "30%"
+    }
+  },
+  "weight_matrix_labels": {
+    "Q1": "Q1. Initiative you took",
+    "Q2": "Q2. Disagreed or changed your mind",
+    "Q3": "Q3. Belief about beauty to unlearn",
+    "Q4": "Q4. Problem you noticed, first step",
+    "Q5": "Q5. What you’re working to improve"
+  },
+  "share_of_written_score": {
+    "SA": "19%",
+    "CR": "20%",
+    "EV": "18%",
+    "IJ": "23%",
+    "CV": "20%"
+  },
+  "scoring_method": [
+    "For each active cell, select the level (0/2/4/6/8) from the descriptor table, judging only that answer.",
+    "Question score (%) = sum of (level ÷ 8 × cell weight) across that question’s active cells.",
+    "Question marks = question score × 8.",
+    "Written score = sum of the five question marks, out of 40.",
+    "Record a supporting evidence phrase for every active cell. No score without recorded evidence.",
+    "Worked example (Q1): SA at 4, CR at 6, EV at 2, IJ at 6, CV at 4 gives (0.5 × 20) + (0.75 × 15) + (0.25 × 10) + (0.75 × 40) + (0.5 × 15) = 61.25%, which is 4.9 of 8 marks."
+  ],
+  "not_scored": [
+    "Not scored: grammar, spelling, choice of language, English fluency, polish, or length within the limit.",
+    "Not scored: viewpoint. No marks for agreeing or disagreeing with any position on beauty, tradition, marriage, homemaking or career.",
+    "Not scored: scale, money or prestige. A family- or neighbourhood-level action scores the same as a large one if the judgment is equally sound. Naming an NGO or famous person earns nothing by itself."
+  ],
+  "flags": [
+    "Breach of the published brand-values floor (for example, demeaning any group, caste, religion or skin colour). A confirmed breach can disqualify regardless of score.",
+    "Blank or off-topic answer.",
+    "Suspected copied or AI-generated text. This triggers verification in later rounds, never a score penalty on suspicion alone.",
+    "Harmful content.",
+    "Technical failure, with a fair resubmission path."
+  ]
+}
