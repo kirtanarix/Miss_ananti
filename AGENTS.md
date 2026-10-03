@@ -57,3 +57,5 @@ Video scoring: on hold until BD confirms the final video questions and duration.
 - Open points from BD (do not decide them yourself): odd levels (Section 5 allows them, Section 7
   lists only 0/2/4/6/8); "consistent across answers" in level 8 of SA and CV vs "judging only that
   answer"; Section 13 items (languages, brand-values list, cutoff band, audit sample).
+
+## Final written report (Task 10): outputs/written_final_report.xlsx (Review 9 columns, Totals 7, Rubric), AI results only. Command: written_report.py <id>; export without Gemini: written_report.py --export-only <id>. Append only, never modify earlier contestants, never rescore a contestant already in the report, never append a contestant with a failed question.
