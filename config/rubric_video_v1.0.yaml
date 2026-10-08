@@ -1,0 +1,326 @@
+# JSON-compatible YAML; PDF source wording retained with layout whitespace joined.
+# Current operational rules are in confirmed_project_decisions; historical flags are in pdf_non_scoring_flags.
+{
+  "version": "VIDEO_V1",
+  "source_pdf": "docs/Miss_Ananti_India_AI_Video_Screening_Framework_v1.0.pdf",
+  "assessment_component_weights": {
+    "Written questions": 40,
+    "Social presence": 20,
+    "Recorded video": 20,
+    "MCQ judgment test": 15,
+    "Authenticity": 5
+  },
+  "scope": "Purpose. This document defines how AI should score the recorded video in Round 1. The video contributes 20 marks out of the overall 100. The scoring philosophy is aligned with the frozen Written Screening Framework v1.0: score observable evidence, not appearance, prestige, language polish, or a preferred opinion.",
+  "authenticity_separation": "Important: The separate 5% authenticity component should remain separate. The video rubric below should not invent an additional hidden authenticity score.",
+  "video_prompts": [
+    "Introduce yourself - name and city.",
+    "What are your future goals?",
+    "Why do you want to be a part of Miss Ananti India?"
+  ],
+  "context_guardrail": "Name and city are context only. A candidate must not gain or lose merit because of her city, State, profession, education, or background.",
+  "common_evidence_scale": "Use the same five-level evidence scale as the written framework: 0 / 2 / 4 / 6 / 8. Odd numbers may be used only when evidence genuinely falls between two anchor levels. Level Meaning 0 No usable evidence / off-topic / unable to assess. 2 Very limited or generic evidence. 4 Adequate evidence; relevant but not well developed. 6 Strong evidence; clear, specific and meaningfully supported. 8 Exceptional evidence; highly specific, grounded, coherent and well demonstrated. Conversion formula: Parameter marks = (evidence level / 8) x parameter maximum marks. The backend performs the arithmetic.",
+  "parameters": {
+    "SA": {
+      "name": "Self-awareness & identity",
+      "maximum_marks": 3,
+      "primary_evidence": "Introduction + all responses",
+      "what_earns_marks": "Communicates who she is beyond basic facts; shows grounded self-understanding.",
+      "levels": {
+        "0": "No usable personal information beyond mandatory identification, or response is unrelated.",
+        "2": "Mostly generic self-description such as 'confident, hardworking, positive' with little personal context.",
+        "4": "Provides basic personal context - current role, interests, background or aspiration - but limited reflection.",
+        "6": "Gives specific personal information and shows some understanding of what matters to her or how she sees herself.",
+        "8": "Presents a grounded, distinctive and coherent sense of self using specific personal context without self-glorification."
+      },
+      "fairness_guardrail": "Fairness guardrail: Do not reward prestigious education, profession, city, family background, achievements, or social status."
+    },
+    "Goals": {
+      "name": "Goal clarity & direction",
+      "maximum_marks": 4,
+      "primary_evidence": "Future goals",
+      "what_earns_marks": "Clear goal, personal motivation, direction, and realistic next steps/current effort.",
+      "levels": {
+        "0": "No future goal stated or response is off-topic.",
+        "2": "Vague ambition such as 'I want success/fame/happiness' without direction.",
+        "4": "A clear goal is stated, but motivation, path or current action is limited.",
+        "6": "Clear goal plus meaningful reason and a realistic direction or next step.",
+        "8": "Clear and personally meaningful goal, reason, current effort/next steps, and realistic understanding of how she may progress."
+      },
+      "fairness_guardrail": "Fairness guardrail: Do not rank professions. Acting, entrepreneurship, teaching, sport, family goals, arts, public service and other legitimate goals can all score equally."
+    },
+    "Purpose": {
+      "name": "Purpose for joining Miss Ananti India",
+      "maximum_marks": 4,
+      "primary_evidence": "Why Miss Ananti",
+      "what_earns_marks": "Specific reason for joining; understands opportunity, growth and contribution.",
+      "levels": {
+        "0": "No meaningful reason for joining.",
+        "2": "Mainly title, fame, followers, exposure or vague dream with no further substance.",
+        "4": "General reason such as confidence, growth, opportunity or inspiration, but limited personal connection or contribution.",
+        "6": "Specific personal reason for joining and a clear idea of what she hopes to develop, represent or contribute.",
+        "8": "Strong personal motivation, clear understanding of the platform, realistic contribution, and connection between the opportunity and her own direction."
+      },
+      "fairness_guardrail": "Fairness guardrail: Career opportunity is not a negative. It becomes limited evidence only when the response contains no broader understanding of participation, growth or responsibility."
+    },
+    "Clarity": {
+      "name": "Clarity & structure of communication",
+      "maximum_marks": 3,
+      "primary_evidence": "Whole video",
+      "what_earns_marks": "Meaning is understandable, relevant and logically organised in any supported language.",
+      "levels": {
+        "0": "Speech/transcript is unusable or response does not address the prompts.",
+        "2": "Meaning is difficult to follow; ideas are disconnected or largely off-topic.",
+        "4": "Generally understandable and relevant, but repetitive or loosely organised.",
+        "6": "Clear, relevant and reasonably structured; ideas connect logically.",
+        "8": "Very clear, concise and coherent; communicates meaning effectively without unnecessary complexity."
+      },
+      "fairness_guardrail": "Fairness guardrail: Do not score grammar, accent, vocabulary sophistication, English fluency, or speaking speed as merit if meaning is understandable."
+    },
+    "Voice": {
+      "name": "Personal specificity & voice",
+      "maximum_marks": 4,
+      "primary_evidence": "Whole video",
+      "what_earns_marks": "Uses personal details, motivations or experiences rather than stock pageant phrases.",
+      "levels": {
+        "0": "No identifiable personal content.",
+        "2": "Mostly stock phrases or generic pageant language that could apply to almost anyone.",
+        "4": "Some personal details or motivations are present, but much of the response remains generic.",
+        "6": "Responses are clearly rooted in her own goals, experiences or motivations.",
+        "8": "Consistently specific and personally grounded across prompts; distinctive without needing dramatic achievements."
+      },
+      "fairness_guardrail": "Fairness guardrail: Common answers are not weak by default. A common goal can score highly if the reasoning and personal connection are specific."
+    },
+# Confirmed project/BD decisions in confirmed_project_decisions take precedence for delivery and heavy reading; PDF source wording below is preserved.
+    "Composure": {
+      "name": "Composure & task engagement",
+      "maximum_marks": 2,
+      "primary_evidence": "Whole video",
+      "what_earns_marks": "Completes the task, stays reasonably focused and recovers from normal hesitation.",
+      "levels": {
+        "0": "Does not meaningfully complete the task.",
+        "2": "Completes only limited parts or repeatedly loses the task; content is difficult to obtain.",
+        "4": "Completes the task despite noticeable nervousness or hesitation.",
+        "6": "Engages with all prompts and remains reasonably focused, with normal pauses or minor hesitation.",
+        "8": "Focused, natural task completion; handles pauses or small mistakes and continues without losing the response."
+      },
+      "fairness_guardrail": "Fairness guardrail: Do not infer confidence/personality from eye contact, facial expression, hand movement, soft voice, disability, or cultural communication style."
+    }
+  },
+  "prompt_to_parameter_evidence_map": {
+    "columns": [
+      "Prompt",
+      "SA",
+      "Goals",
+      "Purpose",
+      "Clarity",
+      "Personal voice",
+      "Composure"
+    ],
+    "rows": [
+      [
+        "Introduce yourself",
+        "Primary",
+        "-",
+        "-",
+        "Secondary",
+        "Primary",
+        "Secondary"
+      ],
+      [
+        "Future goals",
+        "Secondary",
+        "Primary",
+        "-",
+        "Secondary",
+        "Secondary",
+        "Secondary"
+      ],
+      [
+        "Why Miss Ananti India?",
+        "Secondary",
+        "-",
+        "Primary",
+        "Secondary",
+        "Primary",
+        "Secondary"
+      ]
+    ],
+    "guidance": "The introduction is primarily context and self-awareness evidence. Future goals and 'Why Miss Ananti India?' should carry the strongest merit evidence because they reveal direction and purpose."
+  },
+  "ai_processing_design": "Step 1 - Transcribe the audio/video using a supported speech-to-text pipeline.  Step 2 - Score content parameters mainly from the transcript: self-awareness, goals, purpose, clarity and personal specificity.  Step 3 - Score only task-level observable delivery from the recording for composure/task engagement.  Step 4 - For every scored parameter, return: evidence level, a short supporting evidence phrase, and any non-scoring flag.  Step 5 - Backend converts levels to marks and sums the six parameters to a maximum of 20.  Step 6 - Store video transcript, rubric version, model version, evidence phrases, levels, marks and decision history. No score without evidence. Each parameter score must be supported by a phrase or observable fact from the contestant's response.",
+# Confirmed project/BD decisions in confirmed_project_decisions take precedence for delivery and heavy reading; PDF source wording below is preserved.
+  "prohibited_judging_factors": {
+    "introduction": "The AI must not increase or decrease merit because of:",
+    "factors": [
+      "Facial attractiveness, facial symmetry, skin tone or complexion.",
+      "Height, weight, body shape or perceived fitness.",
+      "Makeup, hairstyle, clothing style/cost or jewellery.",
+      "Room/background, camera quality, phone model or perceived wealth.",
+      "City, State, caste, religion, family background, college or employer prestige.",
+      "Accent, grammar, English fluency, vocabulary sophistication or speaking speed, provided meaning is understandable.",
+      "Extroversion versus introversion, eye contact, hand movement, facial expression, soft voice or normal nervousness.",
+      "Follower count or social popularity - social presence is already scored separately."
+    ]
+  },
+  "non_scoring_flags": {
+    "VIDEO_TECHNICAL_FAILURE": "Audio/video quality prevents fair assessment; provide defined retry/resubmission path.",
+    "PROMPT_NOT_ANSWERED": "One or more prompts are substantially unanswered.",
+    "TRANSCRIPT_LOW_QUALITY": "Speech recognition is too uncertain for reliable content scoring.",
+    "POSSIBLE_TEMPLATE_RESPONSE": "Optional verification flag only; do not deduct automatically.",
+    "CONTENT_SAFETY_REVIEW": "Harmful or prohibited content requires review under published rules.",
+    "SCORING_DISAGREEMENT": "Independent AI passes differ beyond the defined tolerance."
+  },
+  "engineer_test_cases": "Test case Expected behaviour Strong content, simple English Should score strongly when meaning, purpose and direction are clear. Grammar must not reduce merit. Highly polished but generic Should not receive high personal voice/purpose marks simply because delivery is polished. Nervous but thoughtful Normal hesitation should not materially reduce content scores; composure can still be adequate/strong if task is completed. Small-town / ordinary background Must receive the same opportunity for full marks as a candidate with elite education or professional exposure. Career-focused motivation Can score well if the candidate gives a specific, responsible reason; career ambition itself is not a negative. Test case Expected behaviour Common future goal A common goal can receive full marks if motivation, personal connection and direction are specific. Weak audio / technical issue Do not assign low merit because of technical failure; flag for retry or review. Very attractive / professionally shot video Appearance and production quality must not influence merit scores.",
+  "final_scoring_formula": "Video score (out of 20) = (SA level/8 x 3) + (Goals level/8 x 4) + (Purpose level/8 x 4) + (Clarity level/8 x 3) + (Personal Voice level/8 x 4) + (Composure level/8 x 2). Overall Round 1 score = Written 40 + Social Presence 20 + MCQ 15 + Authenticity 5 + Video 20 = 100.",
+  "recommended_production_rule": "Primary principle: The AI is not judging whether the contestant 'looks like a beauty queen.' It is judging only the evidence she demonstrates in the assigned video task: who she is, where she wants to go, why she wants to join, how clearly and personally she communicates, and whether she can complete the task. For testing: Use a diverse multilingual pilot set scored independently by experienced judges, compare AI evidence levels against the human rubric, and freeze the rubric, prompt and model version before production.",
+  "ambiguities_for_bd": [
+    "TODO_BD: CONTENT_SAFETY_REVIEW references published rules, but those rules and the review process are not provided by the PDF or confirmed decisions.",
+    "TODO_BD: SCORING_DISAGREEMENT references a defined tolerance between independent AI passes, but no tolerance or resolution process is provided.",
+    "TODO_BD: No video pass/fail threshold is provided. V1 reports marks only; no threshold is invented."
+  ],
+  "pdf_non_scoring_flags": {
+    "VIDEO_TECHNICAL_FAILURE": "Audio/video quality prevents fair assessment; provide defined retry/resubmission path.",
+    "PROMPT_NOT_ANSWERED": "One or more prompts are substantially unanswered.",
+    "TRANSCRIPT_LOW_QUALITY": "Speech recognition is too uncertain for reliable content scoring.",
+    "POSSIBLE_HEAVY_READING": "Optional verification flag only; do not deduct automatically.",
+    "POSSIBLE_TEMPLATE_RESPONSE": "Optional verification flag only; do not deduct automatically.",
+    "CONTENT_SAFETY_REVIEW": "Harmful or prohibited content requires review under published rules.",
+    "SCORING_DISAGREEMENT": "Independent AI passes differ beyond the defined tolerance."
+  },
+  "scoring_related_flags": {
+    "POSSIBLE_HEAVY_READING": "If sufficiently supported by observable evidence, apparent script reading can contribute to score reduction under relevant existing parameters. No automatic or separate numerical deduction."
+  },
+  "confirmed_project_decisions": {
+    "precedence": {
+      "source": "Final confirmed project/BD decisions supplied by the user.",
+      "pdf_text_preserved": true,
+      "operational_rules_take_precedence": true,
+      "affected_pdf_rules": [
+        "Section 5.6 fairness guardrail and Section 8 delivery exclusions: relevant observable delivery behaviour may contribute to existing parameters; do not infer personality or judge appearance.",
+        "Section 7 Step 3: delivery evidence may contribute where relevant to existing parameters, rather than only Composure.",
+        "Section 9 POSSIBLE_HEAVY_READING: apparent script reading supported by observable evidence can reduce marks through relevant existing parameters; not merely an informational flag.",
+        "The historical PDF flag wording is retained in pdf_non_scoring_flags; non_scoring_flags and scoring_related_flags describe current project use."
+      ]
+    },
+    "nervousness": {
+      "can_reduce_marks": true,
+      "separate_parameter": false,
+      "rule": "Observable nervousness can affect relevant existing rubric parameters, especially Composure. Concrete observable evidence must support the chosen level or reduction."
+    },
+    "normal_hesitation": {
+      "automatic_deduction": false,
+      "rule": "Normal hesitation, normal pauses, or minor hesitation by themselves do not reduce marks. They affect scoring only when meaningful evidence under the existing rubric."
+    },
+    "observable_delivery": {
+      "observations": [
+        "whether the candidate completes the prompt/task",
+        "repeated stopping",
+        "losing the thread",
+        "restarting/recovering",
+        "eye contact",
+        "hand movement",
+        "voice confidence",
+        "other observable delivery behaviour relevant to the existing rubric"
+      ],
+      "relevant_existing_parameters_only": true,
+      "rule": "These observations may contribute to existing parameters where relevant, as delivery/task-engagement evidence only. They do not permit appearance judgements or unsupported confidence/personality inference."
+    },
+    "appearance_and_fairness": {
+      "never_affect_score": [
+        "beauty",
+        "facial attractiveness",
+        "skin colour",
+        "skin tone",
+        "eye colour",
+        "physical attractiveness",
+        "body/physical appearance",
+        "any similar appearance-based judgement"
+      ],
+      "pdf_appearance_and_fairness_prohibitions_preserved": true,
+      "location_background_prestige_never_affect_score": true,
+      "rule": "Eye contact, hand movement and voice confidence are delivery/task-engagement evidence only, never attractiveness criteria. All PDF appearance, location/background/prestige and language-fairness prohibitions remain in force."
+    },
+    "introduction": {
+      "name_city_alone_earn_marks": false,
+      "rule": "Evaluate presentation using the existing PDF-defined descriptors and available evidence. Name and city alone earn no marks; small village, small city, location/background/prestige must not affect merit."
+    },
+    "duration": {
+      "video_limit": null,
+      "per_prompt_limit": null,
+      "duration_penalty": false,
+      "duration_score": false
+    },
+    "level_zero": {
+      "use_existing_pdf_definitions": true,
+      "rule": "Use the applicable existing PDF Level 0 definitions for genuinely unassessable, unusable or irrelevant responses. Technical/video-quality failure follows the retry/review rule below, without an arbitrary numerical penalty."
+    },
+    "odd_levels": {
+      "allowed": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "rule": "Allowed when evidence genuinely falls between two neighbouring defined anchor levels."
+    },
+    "combined_evidence": {
+      "levels_per_parameter": 1,
+      "average_prompt_scores": false,
+      "rule": "Consider overall available evidence across the relevant video prompts and choose one level per parameter using the existing descriptors."
+    },
+    "unanswered_prompt": {
+      "automatic_reduction_all_parameters": false,
+      "rule": "Inspect the full video. Affect only parameters whose required evidence is prevented or weakened. Affect Composure/Clarity only when the omission provides relevant evidence under their existing definitions."
+    },
+    "languages": {
+      "supported": [
+        "English",
+        "Hindi",
+        "Hinglish"
+      ],
+      "unsupported_action": "flag_for_review",
+      "unsupported_automatic_retry": false,
+      "unsupported_language_penalty": false,
+      "rule": "Languages outside English/Hindi/Hinglish are currently unsupported for V1 evaluation and require review; no language-specific numerical penalty."
+    },
+    "evidence_requirements": {
+      "required_for_every_parameter": true,
+      "candidate_speech_where_applicable": true,
+      "concrete_observable_evidence_where_applicable": true,
+      "chosen_level_and_reduction_must_be_explained": true,
+      "rule": "Every parameter score requires evidence: relevant content from what the candidate actually said where applicable AND concrete observable evidence explaining the assigned level or reduction where applicable. Claims such as Level 4 because she was nervous are insufficient. Reductions for nervousness, significant hesitation, task engagement or reading require supporting observable evidence."
+    },
+    "technical_failure": {
+      "retry_count": 1,
+      "after_retry_action": "flag_for_review",
+      "after_retry_status": "unable_to_be_fairly_evaluated",
+      "flag": "VIDEO_TECHNICAL_FAILURE",
+      "numerical_penalty": false,
+      "rule": "If video quality/technical limitation prevents fair evaluation, allow one retry. If still not fairly evaluable, flag the case as unable to be fairly evaluated because of video quality/technical limitation."
+    },
+    "heavy_reading": {
+      "can_reduce_marks": true,
+      "informational_only": false,
+      "observable_evidence_required": true,
+      "relevant_existing_parameters_only": true,
+      "automatic_deduction": false,
+      "separate_numerical_penalty": false,
+      "flag": "POSSIBLE_HEAVY_READING",
+      "rule": "Apparent script reading sufficiently supported by observable evidence, such as eye-contact behaviour and relevant delivery/task-engagement cues, can contribute to reduction under relevant existing parameters."
+    },
+    "generic_answers": {
+      "parameters": [
+        "Voice",
+        "Purpose"
+      ],
+      "separate_parameter": false,
+      "separate_numerical_penalty": false,
+      "rule": "Evaluate generic/template-like answers through the existing Personal Voice/Purpose descriptors where relevant."
+    },
+    "transcription": {
+      "audio_only": true,
+      "rule": "Project audio-only transcription instructions remain in force. No transcription or AI video scoring is implemented in V1."
+    },
+    "v1_execution": "Operational decisions are configuration for evaluation; score_video.py only validates supplied integer levels and computes marks. It does not observe videos, assign levels, validate evidence, retry, or call AI."
+  }
+}

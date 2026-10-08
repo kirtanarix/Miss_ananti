@@ -1,0 +1,274 @@
+{
+  "evaluation_version": "written_v2",
+  "candidate_id": "C003",
+  "run": 2,
+  "model": "gemini-3.8-flash",
+  "temperature": 0,
+  "generation_config": {
+    "temperature": 0,
+    "response_mime_type": "application/json"
+  },
+  "prompt_file": "prompts/score_written_v2.txt",
+  "prompt_sha256": "4c7f7416799941c99419eba98261c50d904c419419efac752525b9bb8f8fcbb1",
+  "rubric_file": "config/rubric_written_v1.0.yaml",
+  "rubric_version": "v1.0",
+  "rubric_version_source": "frozen source filename; YAML has no version field",
+  "rubric_sha256": "b77330e38130d1c3b576888159ed4c89479114404bff65506c64e5f8896c9610",
+  "run_date": "2026-10-07T17:49:21.501385+05:30",
+  "questions": {
+    "Q1": {
+      "evidence": {},
+      "element_checks": {},
+      "reasoning": {},
+      "next_level_explanation": {},
+      "levels": {},
+      "flags": [],
+      "evidence_verified": {
+        "SA": [],
+        "CR": [],
+        "EV": [],
+        "IJ": [],
+        "CV": []
+      },
+      "marks": null,
+      "status": "unable_to_evaluate",
+      "raw_reply": "",
+      "reason": "API failure; no valid response received",
+      "attempts": 3,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "514adcda51eea2f9b9ec3e3453d22e48fa2962682a96615bbf8c847986bcefbd",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 2,
+          "prompt_sha256": "514adcda51eea2f9b9ec3e3453d22e48fa2962682a96615bbf8c847986bcefbd",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 3,
+          "prompt_sha256": "514adcda51eea2f9b9ec3e3453d22e48fa2962682a96615bbf8c847986bcefbd",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "514adcda51eea2f9b9ec3e3453d22e48fa2962682a96615bbf8c847986bcefbd",
+      "answer_sha256": "c7e0e7d457285001c740c8ef753fff19b105432feb5f3d0d09fcddc31fb4df33"
+    },
+    "Q2": {
+      "evidence": {},
+      "element_checks": {},
+      "reasoning": {},
+      "next_level_explanation": {},
+      "levels": {},
+      "flags": [],
+      "evidence_verified": {
+        "SA": [],
+        "CR": [],
+        "EV": [],
+        "CV": []
+      },
+      "marks": null,
+      "status": "unable_to_evaluate",
+      "raw_reply": "",
+      "reason": "API failure; no valid response received",
+      "attempts": 3,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "b2fa3973943b20495b69f99df3889d598cde7daecb80eaa74f980bb1b4ef9614",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 2,
+          "prompt_sha256": "b2fa3973943b20495b69f99df3889d598cde7daecb80eaa74f980bb1b4ef9614",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 3,
+          "prompt_sha256": "b2fa3973943b20495b69f99df3889d598cde7daecb80eaa74f980bb1b4ef9614",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "b2fa3973943b20495b69f99df3889d598cde7daecb80eaa74f980bb1b4ef9614",
+      "answer_sha256": "7e9fe36a9f230eefe0924a509c5ea4cbc10df2f3789b2fe82205d4ef349dea3c"
+    },
+    "Q3": {
+      "evidence": {},
+      "element_checks": {},
+      "reasoning": {},
+      "next_level_explanation": {},
+      "levels": {},
+      "flags": [],
+      "evidence_verified": {
+        "CR": [],
+        "EV": [],
+        "IJ": [],
+        "CV": []
+      },
+      "marks": null,
+      "status": "unable_to_evaluate",
+      "raw_reply": "",
+      "reason": "API failure; no valid response received",
+      "attempts": 3,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "0235427d61703b299f10cfe2eba735e40312f7e2bfd50cfe6ff4ff9b8692c7d3",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 2,
+          "prompt_sha256": "0235427d61703b299f10cfe2eba735e40312f7e2bfd50cfe6ff4ff9b8692c7d3",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 3,
+          "prompt_sha256": "0235427d61703b299f10cfe2eba735e40312f7e2bfd50cfe6ff4ff9b8692c7d3",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "0235427d61703b299f10cfe2eba735e40312f7e2bfd50cfe6ff4ff9b8692c7d3",
+      "answer_sha256": "288fcbb9cce4dce1fe283fe1ac9c9dceb3a7736b6c8cdbb6c4860c4a208a104f"
+    },
+    "Q4": {
+      "evidence": {},
+      "element_checks": {},
+      "reasoning": {},
+      "next_level_explanation": {},
+      "levels": {},
+      "flags": [],
+      "evidence_verified": {
+        "CR": [],
+        "EV": [],
+        "IJ": [],
+        "CV": []
+      },
+      "marks": null,
+      "status": "unable_to_evaluate",
+      "raw_reply": "",
+      "reason": "API failure; no valid response received",
+      "attempts": 3,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "10dcabb420a09466e09b1b7088e0fba61eb3fbba8a3b6122ad7e85d387a2da7b",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 2,
+          "prompt_sha256": "10dcabb420a09466e09b1b7088e0fba61eb3fbba8a3b6122ad7e85d387a2da7b",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 3,
+          "prompt_sha256": "10dcabb420a09466e09b1b7088e0fba61eb3fbba8a3b6122ad7e85d387a2da7b",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "10dcabb420a09466e09b1b7088e0fba61eb3fbba8a3b6122ad7e85d387a2da7b",
+      "answer_sha256": "cea17f9645aa6fa26db00f5e97f5a12bd6b6243c5324a8fb5cf7040eda471924"
+    },
+    "Q5": {
+      "evidence": {},
+      "element_checks": {},
+      "reasoning": {},
+      "next_level_explanation": {},
+      "levels": {},
+      "flags": [],
+      "evidence_verified": {
+        "SA": [],
+        "IJ": [],
+        "CV": []
+      },
+      "marks": null,
+      "status": "unable_to_evaluate",
+      "raw_reply": "",
+      "reason": "API failure; no valid response received",
+      "attempts": 3,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "ce1a63ac71be1c1495b3c93d288d995af172b111e562c580e10e8a37e8e437a3",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 2,
+          "prompt_sha256": "ce1a63ac71be1c1495b3c93d288d995af172b111e562c580e10e8a37e8e437a3",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 3,
+          "prompt_sha256": "ce1a63ac71be1c1495b3c93d288d995af172b111e562c580e10e8a37e8e437a3",
+          "validator_error": "API failure; no valid response received",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "ce1a63ac71be1c1495b3c93d288d995af172b111e562c580e10e8a37e8e437a3",
+      "answer_sha256": "a8c3b285d96af4aaed0e1395723065cf66e4b65f4dbf5ed8e68d058445e33f7d"
+    }
+  },
+  "unable_to_evaluate_count": 5,
+  "total_is_partial": true,
+  "written_total": 0.0,
+  "written_total_out_of": 40
+}

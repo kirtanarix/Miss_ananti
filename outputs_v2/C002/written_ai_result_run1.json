@@ -1,0 +1,659 @@
+{
+  "evaluation_version": "written_v2",
+  "candidate_id": "C002",
+  "run": 1,
+  "model": "gemini-3.8-flash",
+  "temperature": 0,
+  "generation_config": {
+    "temperature": 0,
+    "response_mime_type": "application/json"
+  },
+  "prompt_file": "prompts/score_written_v2.txt",
+  "prompt_sha256": "4c7f7416799941c99419eba98261c50d904c419419efac752525b9bb8f8fcbb1",
+  "rubric_file": "config/rubric_written_v1.0.yaml",
+  "rubric_version": "v1.0",
+  "rubric_version_source": "frozen source filename; YAML has no version field",
+  "rubric_sha256": "b77330e38130d1c3b576888159ed4c89479114404bff65506c64e5f8896c9610",
+  "run_date": "2026-10-07T17:40:42.982747+05:30",
+  "questions": {
+    "Q1": {
+      "evidence": {
+        "SA": [
+          "seriously explore modelling as a career instead of just keeping it as a dream."
+        ],
+        "CR": [
+          "opportunities don't always come to you—you have to prepare yourself and create them."
+        ],
+        "EV": [],
+        "IJ": [
+          "I started working on my confidence, communication, presentation, and learning"
+        ],
+        "CV": [
+          "seriously explore modelling as a career instead of just keeping it as a dream."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Names a real choice, motivation or limitation of her own",
+            "status": "supported",
+            "explanation": "She names her personal choice and motivation to pursue modelling as a career rather than keeping it as a dream."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Clear point with a relevant reason",
+            "status": "supported",
+            "explanation": "She makes a clear point that one must prepare and take initiative because opportunities do not simply come on their own."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "No evidence",
+            "status": "supported",
+            "explanation": "The response is entirely self-focused and does not mention or consider other people."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Realistic step within her means that fits the problem, or has already acted",
+            "status": "supported",
+            "explanation": "She has already acted by working on her presentation, communication, confidence, and seeking opportunities."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal with at least one personal detail",
+            "status": "supported",
+            "explanation": "She identifies a clear goal of pursuing modelling with the personal context of moving past viewing it purely as a dream."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate articulates a real choice and personal motivation regarding her career direction, meeting level 4.",
+        "CR": "The candidate conveys a clear takeaway supported by the reason that one must actively create opportunities.",
+        "EV": "There is no mention of other people or communities affected, so level 0 is warranted.",
+        "IJ": "She describes steps she has already taken within her means to build skills for her goal.",
+        "CV": "She states a clear personal aspiration and direction, supported by personal details about skill-building."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 6,
+          "descriptor": "Explains what she learned, with a concrete example",
+          "missing_elements": [
+            "concrete example"
+          ],
+          "explanation": "While she states what she learned, she does not provide a concrete example illustrating how she learned it or applied it."
+        },
+        "CR": {
+          "next_anchor_level": 6,
+          "descriptor": "Reason grounded in her own observation or example",
+          "missing_elements": [
+            "Reason grounded in her own observation or example"
+          ],
+          "explanation": "Her reasoning is expressed in general terms rather than grounded in a specific observation or concrete example from her experience."
+        },
+        "EV": {
+          "next_anchor_level": 2,
+          "descriptor": "Names a cause or label only",
+          "missing_elements": [
+            "Names a cause or label only"
+          ],
+          "explanation": "No cause, label, or reference to other individuals is included in the answer."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "reflected on the result"
+          ],
+          "explanation": "She mentions acting, but does not state the outcome or result of those actions to reflect upon."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "Her description of working on communication and confidence relies largely on broad phrasing rather than specific personal details."
+        }
+      },
+      "levels": {
+        "SA": 4,
+        "CR": 4,
+        "EV": 0,
+        "IJ": 6,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 4.4,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"seriously explore modelling as a career instead of just keeping it as a dream.\"\n    ],\n    \"CR\": [\n      \"opportunities don't always come to you—you have to prepare yourself and create them.\"\n    ],\n    \"EV\": [],\n    \"IJ\": [\n      \"I started working on my confidence, communication, presentation, and learning\"\n    ],\n    \"CV\": [\n      \"seriously explore modelling as a career instead of just keeping it as a dream.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Names a real choice, motivation or limitation of her own\",\n        \"status\": \"supported\",\n        \"explanation\": \"She names her personal choice and motivation to pursue modelling as a career rather than keeping it as a dream.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Clear point with a relevant reason\",\n        \"status\": \"supported\",\n        \"explanation\": \"She makes a clear point that one must prepare and take initiative because opportunities do not simply come on their own.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"No evidence\",\n        \"status\": \"supported\",\n        \"explanation\": \"The response is entirely self-focused and does not mention or consider other people.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Realistic step within her means that fits the problem, or has already acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"She has already acted by working on her presentation, communication, confidence, and seeking opportunities.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal with at least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She identifies a clear goal of pursuing modelling with the personal context of moving past viewing it purely as a dream.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate articulates a real choice and personal motivation regarding her career direction, meeting level 4.\",\n    \"CR\": \"The candidate conveys a clear takeaway supported by the reason that one must actively create opportunities.\",\n    \"EV\": \"There is no mention of other people or communities affected, so level 0 is warranted.\",\n    \"IJ\": \"She describes steps she has already taken within her means to build skills for her goal.\",\n    \"CV\": \"She states a clear personal aspiration and direction, supported by personal details about skill-building.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Explains what she learned, with a concrete example\",\n      \"missing_elements\": [\n        \"concrete example\"\n      ],\n      \"explanation\": \"While she states what she learned, she does not provide a concrete example illustrating how she learned it or applied it.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Reason grounded in her own observation or example\",\n      \"missing_elements\": [\n        \"Reason grounded in her own observation or example\"\n      ],\n      \"explanation\": \"Her reasoning is expressed in general terms rather than grounded in a specific observation or concrete example from her experience.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 2,\n      \"descriptor\": \"Names a cause or label only\",\n      \"missing_elements\": [\n        \"Names a cause or label only\"\n      ],\n      \"explanation\": \"No cause, label, or reference to other individuals is included in the answer.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"reflected on the result\"\n      ],\n      \"explanation\": \"She mentions acting, but does not state the outcome or result of those actions to reflect upon.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"Her description of working on communication and confidence relies largely on broad phrasing rather than specific personal details.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 4,\n    \"CR\": 4,\n    \"EV\": 0,\n    \"IJ\": 6,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "a591cbf281114a5985c239024b66fbcb052c20f68ddc9ffcca6e8790a0ba8479",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "a591cbf281114a5985c239024b66fbcb052c20f68ddc9ffcca6e8790a0ba8479",
+      "answer_sha256": "ef57914f0f67552a0593e20df2a378e625db76a163c2f6bb77b848eb7f2005cb"
+    },
+    "Q2": {
+      "evidence": {
+        "SA": [
+          "When I decided to pursue modelling, not everyone around me immediately understood my choice."
+        ],
+        "CR": [
+          "Some people felt it was uncertain as a career. I listened to their concerns",
+          "give myself a genuine chance while staying focused on education, discipline, and personal growth."
+        ],
+        "EV": [
+          "Some people felt it was uncertain as a career. I listened to their concerns"
+        ],
+        "CV": [
+          "When I decided to pursue modelling, not everyone around me immediately understood my choice."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Names a real choice, motivation or limitation of her own",
+            "status": "supported",
+            "explanation": "She names her personal choice to pursue modelling despite lack of immediate support."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Considers another view or trade-off",
+            "status": "supported",
+            "explanation": "She considers the opposing view that modelling is uncertain and addresses it by balancing it with education and discipline."
+          },
+          {
+            "descriptor_element": "clear logic throughout",
+            "status": "supported",
+            "explanation": "Her reasoning moves logically from the disagreement to evaluating concerns, finding a balance, and drawing a conclusion."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Identifies who is affected",
+            "status": "supported",
+            "explanation": "She identifies the people around her who held concerns about her career path."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal with at least one personal detail",
+            "status": "supported",
+            "explanation": "She takes a clear position on entering modelling while sharing the personal detail of balancing it with her education."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate names her specific choice to pursue modelling and her motivation to give herself a chance, which fully satisfies level 4.",
+        "CR": "The candidate presents a clear point, acknowledges the opposing viewpoint regarding career uncertainty, and articulates a trade-off through maintaining focus on education.",
+        "EV": "She acknowledges the people around her and their perspective on career uncertainty, meeting the requirement of identifying who is involved and affected, but does not detail how it affects their lives.",
+        "CV": "She states a clear stance about pursuing her chosen career path, supported by the personal detail of her interest in modelling alongside education."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 6,
+          "descriptor": "Explains what she learned, with a concrete example",
+          "missing_elements": [
+            "with a concrete example"
+          ],
+          "explanation": "She outlines a general takeaway about making responsible decisions, but provides no concrete example illustrating how that learning was applied."
+        },
+        "CR": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "No higher level exists."
+        },
+        "EV": {
+          "next_anchor_level": 6,
+          "descriptor": "Shows why or how it affects them",
+          "missing_elements": [
+            "Shows why or how it affects them"
+          ],
+          "explanation": "The answer notes their concern about uncertainty, but does not explore how her choice directly impacts or affects those individuals."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "Beyond the mention of modelling, the reflection relies heavily on broad phrases ('education, discipline, and personal growth') rather than specific personal details."
+        }
+      },
+      "levels": {
+        "SA": 4,
+        "CR": 8,
+        "EV": 4,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true,
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 5.8,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"When I decided to pursue modelling, not everyone around me immediately understood my choice.\"\n    ],\n    \"CR\": [\n      \"Some people felt it was uncertain as a career. I listened to their concerns\",\n      \"give myself a genuine chance while staying focused on education, discipline, and personal growth.\"\n    ],\n    \"EV\": [\n      \"Some people felt it was uncertain as a career. I listened to their concerns\"\n    ],\n    \"CV\": [\n      \"When I decided to pursue modelling, not everyone around me immediately understood my choice.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Names a real choice, motivation or limitation of her own\",\n        \"status\": \"supported\",\n        \"explanation\": \"She names her personal choice to pursue modelling despite lack of immediate support.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Considers another view or trade-off\",\n        \"status\": \"supported\",\n        \"explanation\": \"She considers the opposing view that modelling is uncertain and addresses it by balancing it with education and discipline.\"\n      },\n      {\n        \"descriptor_element\": \"clear logic throughout\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her reasoning moves logically from the disagreement to evaluating concerns, finding a balance, and drawing a conclusion.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Identifies who is affected\",\n        \"status\": \"supported\",\n        \"explanation\": \"She identifies the people around her who held concerns about her career path.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal with at least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She takes a clear position on entering modelling while sharing the personal detail of balancing it with her education.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate names her specific choice to pursue modelling and her motivation to give herself a chance, which fully satisfies level 4.\",\n    \"CR\": \"The candidate presents a clear point, acknowledges the opposing viewpoint regarding career uncertainty, and articulates a trade-off through maintaining focus on education.\",\n    \"EV\": \"She acknowledges the people around her and their perspective on career uncertainty, meeting the requirement of identifying who is involved and affected, but does not detail how it affects their lives.\",\n    \"CV\": \"She states a clear stance about pursuing her chosen career path, supported by the personal detail of her interest in modelling alongside education.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Explains what she learned, with a concrete example\",\n      \"missing_elements\": [\n        \"with a concrete example\"\n      ],\n      \"explanation\": \"She outlines a general takeaway about making responsible decisions, but provides no concrete example illustrating how that learning was applied.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"No higher level exists.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Shows why or how it affects them\",\n      \"missing_elements\": [\n        \"Shows why or how it affects them\"\n      ],\n      \"explanation\": \"The answer notes their concern about uncertainty, but does not explore how her choice directly impacts or affects those individuals.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"Beyond the mention of modelling, the reflection relies heavily on broad phrases ('education, discipline, and personal growth') rather than specific personal details.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 4,\n    \"CR\": 8,\n    \"EV\": 4,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "aae5c79a73da026f6efa542f88e650ca9224ea35a98f13c89d8c901fd87c9343",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "aae5c79a73da026f6efa542f88e650ca9224ea35a98f13c89d8c901fd87c9343",
+      "answer_sha256": "013d3881e9676ed2666aeaaa70bdb3b8ffa048bfc1008b2e7299cf2d9a37348e"
+    },
+    "Q3": {
+      "evidence": {
+        "CR": [
+          "Modelling has taught me that confidence and individuality can be just as powerful"
+        ],
+        "EV": [
+          "I would like girls to grow up without believing that beauty has one"
+        ],
+        "IJ": [
+          "encouraging girls to take care of themselves, celebrate what makes them different"
+        ],
+        "CV": [
+          "Modelling has taught me that confidence and individuality can be just as powerful"
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "She grounds her reasoning in what her experience in modelling has taught her about confidence and individuality."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Identifies who is affected",
+            "status": "supported",
+            "explanation": "She clearly identifies girls as the group affected by rigid beauty standards."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Vague intention",
+            "status": "supported",
+            "explanation": "She proposes encouraging girls to take care of themselves and celebrate differences, which is a broad and general intention."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal",
+            "status": "supported",
+            "explanation": "She takes a clear stance against narrow beauty standards."
+          },
+          {
+            "descriptor_element": "at least one personal detail",
+            "status": "supported",
+            "explanation": "She mentions that modelling taught her that confidence and individuality matter."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The candidate presents a clear point supported by an observation drawn directly from her personal experience in modelling.",
+        "EV": "The response identifies girls as the affected group, but does not explain how or why narrow beauty standards affect them.",
+        "IJ": "The proposed step of encouraging girls is stated as a broad intention without specifying a concrete action or method.",
+        "CV": "She owns a clear stance and includes a personal detail about her experience in modelling, meeting the requirements for level 4."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The answer does not consider an alternative perspective or trade-off regarding beauty standards."
+        },
+        "EV": {
+          "next_anchor_level": 6,
+          "descriptor": "Shows why or how it affects them",
+          "missing_elements": [
+            "Shows why or how it affects them"
+          ],
+          "explanation": "The answer identifies girls as the affected population but does not describe the specific impact or consequences the belief has on them."
+        },
+        "IJ": {
+          "next_anchor_level": 4,
+          "descriptor": "Concrete action, feasibility unclear",
+          "missing_elements": [
+            "Concrete action"
+          ],
+          "explanation": "The answer states an intention to encourage girls, but does not propose any concrete action or medium through which she would do so."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "Beyond a brief mention of modelling, the response relies on general statements rather than being thoroughly rooted in specific personal detail."
+        }
+      },
+      "levels": {
+        "CR": 6,
+        "EV": 4,
+        "IJ": 2,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 4.2,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"Modelling has taught me that confidence and individuality can be just as powerful\"\n    ],\n    \"EV\": [\n      \"I would like girls to grow up without believing that beauty has one\"\n    ],\n    \"IJ\": [\n      \"encouraging girls to take care of themselves, celebrate what makes them different\"\n    ],\n    \"CV\": [\n      \"Modelling has taught me that confidence and individuality can be just as powerful\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She grounds her reasoning in what her experience in modelling has taught her about confidence and individuality.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Identifies who is affected\",\n        \"status\": \"supported\",\n        \"explanation\": \"She clearly identifies girls as the group affected by rigid beauty standards.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Vague intention\",\n        \"status\": \"supported\",\n        \"explanation\": \"She proposes encouraging girls to take care of themselves and celebrate differences, which is a broad and general intention.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal\",\n        \"status\": \"supported\",\n        \"explanation\": \"She takes a clear stance against narrow beauty standards.\"\n      },\n      {\n        \"descriptor_element\": \"at least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She mentions that modelling taught her that confidence and individuality matter.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The candidate presents a clear point supported by an observation drawn directly from her personal experience in modelling.\",\n    \"EV\": \"The response identifies girls as the affected group, but does not explain how or why narrow beauty standards affect them.\",\n    \"IJ\": \"The proposed step of encouraging girls is stated as a broad intention without specifying a concrete action or method.\",\n    \"CV\": \"She owns a clear stance and includes a personal detail about her experience in modelling, meeting the requirements for level 4.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The answer does not consider an alternative perspective or trade-off regarding beauty standards.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Shows why or how it affects them\",\n      \"missing_elements\": [\n        \"Shows why or how it affects them\"\n      ],\n      \"explanation\": \"The answer identifies girls as the affected population but does not describe the specific impact or consequences the belief has on them.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Concrete action, feasibility unclear\",\n      \"missing_elements\": [\n        \"Concrete action\"\n      ],\n      \"explanation\": \"The answer states an intention to encourage girls, but does not propose any concrete action or medium through which she would do so.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"Beyond a brief mention of modelling, the response relies on general statements rather than being thoroughly rooted in specific personal detail.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 6,\n    \"EV\": 4,\n    \"IJ\": 2,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "80a71e385a14a2040ce3f76d22ebbba4c4957b64a1ac62daebeb0f7330413c2c",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "80a71e385a14a2040ce3f76d22ebbba4c4957b64a1ac62daebeb0f7330413c2c",
+      "answer_sha256": "132532b19795ba956ba27a6c07af060233e741b71aab45280f8b134948e3fccb"
+    },
+    "Q4": {
+      "evidence": {
+        "CR": [
+          "confidence can affect how someone approaches education, career opportunities, and relationships."
+        ],
+        "EV": [
+          "many young people lack confidence because they constantly compare themselves with others",
+          "confidence can affect how someone approaches education, career opportunities, and relationships."
+        ],
+        "IJ": [
+          "encourage more conversations about self-worth and remind people"
+        ],
+        "CV": [
+          "social media often shows only a small part of someone's life."
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Clear point",
+            "status": "supported",
+            "explanation": "The candidate clearly identifies that young people lack confidence due to comparisons on social media."
+          },
+          {
+            "descriptor_element": "with a relevant reason",
+            "status": "supported",
+            "explanation": "She explains that confidence matters because it influences approaches to education, career opportunities, and relationships."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "The candidate explains that constant comparison leads to low confidence, which in turn limits how people approach their careers, education, and relationships."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Vague intention",
+            "status": "supported",
+            "explanation": "Suggesting to 'encourage more conversations' and 'remind people' expresses a general intention without a specific mechanism or plan."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Slogans or stock phrases that could be anyone’s",
+            "status": "supported",
+            "explanation": "The text uses familiar stock phrasing about social media and encouragement without sharing personal details from her life."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The response makes a clear point about youth confidence and backs it with a relevant reason regarding life opportunities.",
+        "EV": "The response identifies young people and explains how and why social comparison harms their confidence and everyday pursuits.",
+        "IJ": "The proposed step is a broad, vague intention rather than a concrete action.",
+        "CV": "The answer relies on generic stock statements and lacks specific personal details that locate the problem in the author's own life."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 6,
+          "descriptor": "Reason grounded in her own observation or example",
+          "missing_elements": [
+            "Reason grounded in her own observation or example"
+          ],
+          "explanation": "The candidate provides a generalized explanation rather than grounding her reasoning in a concrete personal observation or specific example."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "The answer does not recognize differing circumstances among individuals or address respect for different choices."
+        },
+        "IJ": {
+          "next_anchor_level": 4,
+          "descriptor": "Concrete action, feasibility unclear",
+          "missing_elements": [
+            "Concrete action"
+          ],
+          "explanation": "The response only outlines general encouragement and reminders instead of proposing a concrete action."
+        },
+        "CV": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear position or goal with at least one personal detail",
+          "missing_elements": [
+            "at least one personal detail"
+          ],
+          "explanation": "The candidate does not include any personal detail from her own life to support her stance."
+        }
+      },
+      "levels": {
+        "CR": 4,
+        "EV": 6,
+        "IJ": 2,
+        "CV": 2
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true,
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 3.5,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"confidence can affect how someone approaches education, career opportunities, and relationships.\"\n    ],\n    \"EV\": [\n      \"many young people lack confidence because they constantly compare themselves with others\",\n      \"confidence can affect how someone approaches education, career opportunities, and relationships.\"\n    ],\n    \"IJ\": [\n      \"encourage more conversations about self-worth and remind people\"\n    ],\n    \"CV\": [\n      \"social media often shows only a small part of someone's life.\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Clear point\",\n        \"status\": \"supported\",\n        \"explanation\": \"The candidate clearly identifies that young people lack confidence due to comparisons on social media.\"\n      },\n      {\n        \"descriptor_element\": \"with a relevant reason\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that confidence matters because it influences approaches to education, career opportunities, and relationships.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"The candidate explains that constant comparison leads to low confidence, which in turn limits how people approach their careers, education, and relationships.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Vague intention\",\n        \"status\": \"supported\",\n        \"explanation\": \"Suggesting to 'encourage more conversations' and 'remind people' expresses a general intention without a specific mechanism or plan.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Slogans or stock phrases that could be anyone’s\",\n        \"status\": \"supported\",\n        \"explanation\": \"The text uses familiar stock phrasing about social media and encouragement without sharing personal details from her life.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The response makes a clear point about youth confidence and backs it with a relevant reason regarding life opportunities.\",\n    \"EV\": \"The response identifies young people and explains how and why social comparison harms their confidence and everyday pursuits.\",\n    \"IJ\": \"The proposed step is a broad, vague intention rather than a concrete action.\",\n    \"CV\": \"The answer relies on generic stock statements and lacks specific personal details that locate the problem in the author's own life.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Reason grounded in her own observation or example\",\n      \"missing_elements\": [\n        \"Reason grounded in her own observation or example\"\n      ],\n      \"explanation\": \"The candidate provides a generalized explanation rather than grounding her reasoning in a concrete personal observation or specific example.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"The answer does not recognize differing circumstances among individuals or address respect for different choices.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Concrete action, feasibility unclear\",\n      \"missing_elements\": [\n        \"Concrete action\"\n      ],\n      \"explanation\": \"The response only outlines general encouragement and reminders instead of proposing a concrete action.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear position or goal with at least one personal detail\",\n      \"missing_elements\": [\n        \"at least one personal detail\"\n      ],\n      \"explanation\": \"The candidate does not include any personal detail from her own life to support her stance.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 4,\n    \"EV\": 6,\n    \"IJ\": 2,\n    \"CV\": 2\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "fa2d81921483ef30ceaf6f3aff290a698cb2626476eff5159a71ee13757bd292",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "fa2d81921483ef30ceaf6f3aff290a698cb2626476eff5159a71ee13757bd292",
+      "answer_sha256": "a07b3627de4fad042807314da1d2cba4eb89f047505d16b1db50bb481054ca1a"
+    },
+    "Q5": {
+      "evidence": {
+        "SA": [
+          "I am actively working on becoming more confident in unfamiliar situations."
+        ],
+        "IJ": [
+          "practising communication, working on my posture and presentation, participating in new experiences"
+        ],
+        "CV": [
+          "Modelling requires you to meet new people, handle pressure, and present yourself confidently."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Names a real choice, motivation or limitation of her own",
+            "status": "supported",
+            "explanation": "She identifies her limitation of lacking confidence in unfamiliar situations and needing to step out of her comfort zone."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Realistic step within her means that fits the problem, or has already acted",
+            "status": "supported",
+            "explanation": "Practising communication, posture, and speaking up are realistic actions within her means to address her lack of confidence."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal with at least one personal detail",
+            "status": "supported",
+            "explanation": "She sets a clear goal to build confidence and ties it to the personal context of her modelling career."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate clearly names a personal limitation regarding confidence in unfamiliar situations, satisfying level 4.",
+        "IJ": "The candidate has already taken and continues to take realistic, accessible steps to tackle her lack of confidence.",
+        "CV": "She states a clear personal goal of building confidence and includes a personal detail regarding her engagement with modelling."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 6,
+          "descriptor": "Explains what she learned, with a concrete example",
+          "missing_elements": [
+            "Explains what she learned, with a concrete example"
+          ],
+          "explanation": "The candidate does not share a concrete example or explain what she learned from facing unfamiliar situations."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "reflected on the result, or realistic step plus how she’d know it worked"
+          ],
+          "explanation": "She lists ongoing actions and general beliefs, but does not reflect on the results of those actions or explain how she would know they worked."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "While modelling is mentioned, the response is largely framed around broad generalities rather than being deeply rooted in specific personal details of her life."
+        }
+      },
+      "levels": {
+        "SA": 4,
+        "IJ": 6,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 4.4,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"I am actively working on becoming more confident in unfamiliar situations.\"\n    ],\n    \"IJ\": [\n      \"practising communication, working on my posture and presentation, participating in new experiences\"\n    ],\n    \"CV\": [\n      \"Modelling requires you to meet new people, handle pressure, and present yourself confidently.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Names a real choice, motivation or limitation of her own\",\n        \"status\": \"supported\",\n        \"explanation\": \"She identifies her limitation of lacking confidence in unfamiliar situations and needing to step out of her comfort zone.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Realistic step within her means that fits the problem, or has already acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"Practising communication, posture, and speaking up are realistic actions within her means to address her lack of confidence.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal with at least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She sets a clear goal to build confidence and ties it to the personal context of her modelling career.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate clearly names a personal limitation regarding confidence in unfamiliar situations, satisfying level 4.\",\n    \"IJ\": \"The candidate has already taken and continues to take realistic, accessible steps to tackle her lack of confidence.\",\n    \"CV\": \"She states a clear personal goal of building confidence and includes a personal detail regarding her engagement with modelling.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Explains what she learned, with a concrete example\",\n      \"missing_elements\": [\n        \"Explains what she learned, with a concrete example\"\n      ],\n      \"explanation\": \"The candidate does not share a concrete example or explain what she learned from facing unfamiliar situations.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"reflected on the result, or realistic step plus how she’d know it worked\"\n      ],\n      \"explanation\": \"She lists ongoing actions and general beliefs, but does not reflect on the results of those actions or explain how she would know they worked.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"While modelling is mentioned, the response is largely framed around broad generalities rather than being deeply rooted in specific personal details of her life.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 4,\n    \"IJ\": 6,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "51337a3a49810d98dba58f172211308bf1a8140a6202f47073188ecf3696e064",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "51337a3a49810d98dba58f172211308bf1a8140a6202f47073188ecf3696e064",
+      "answer_sha256": "ea4dbf66ddc73b960f48ac180e3d134a725c74bf6b48562bd5526075b62d76b8"
+    }
+  },
+  "unable_to_evaluate_count": 0,
+  "total_is_partial": false,
+  "written_total": 22.3,
+  "written_total_out_of": 40
+}

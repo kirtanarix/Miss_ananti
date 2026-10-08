@@ -1,0 +1,651 @@
+{
+  "evaluation_version": "written_v2",
+  "candidate_id": "C005",
+  "run": 2,
+  "model": "gemini-3.8-flash",
+  "temperature": 0,
+  "generation_config": {
+    "temperature": 0,
+    "response_mime_type": "application/json"
+  },
+  "prompt_file": "prompts/score_written_v2.txt",
+  "prompt_sha256": "c2b1aa52f7d4f8dd62a80197735876038eecb56cf4acccd8d34737ae59374e66",
+  "rubric_file": "config/rubric_written_v1.0.yaml",
+  "rubric_version": "v1.0",
+  "rubric_version_source": "frozen source filename; YAML has no version field",
+  "rubric_sha256": "b77330e38130d1c3b576888159ed4c89479114404bff65506c64e5f8896c9610",
+  "run_date": "2026-10-08T14:31:34.604078+05:30",
+  "questions": {
+    "Q1": {
+      "evidence": {
+        "SA": [
+          "Started as student and became Choreographer."
+        ],
+        "CR": [
+          "5 years. Choreography. Started as student and became Choreographer."
+        ],
+        "EV": [],
+        "IJ": [
+          "Started as student and became Choreographer."
+        ],
+        "CV": [
+          "Started as student and became Choreographer."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Generic self-description",
+            "status": "supported",
+            "explanation": "She describes her progression from student to choreographer in brief, generic terms without delving into her mindset."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "point hard to follow",
+            "status": "supported",
+            "explanation": "The text presents fragmented phrases without a clear premise or argument, making the overall point hard to follow."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "No evidence",
+            "status": "supported",
+            "explanation": "There is no mention of other people, communities affected, or differing choices."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "has already acted",
+            "status": "supported",
+            "explanation": "She indicates she has already taken action over five years by training and becoming a choreographer."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Slogans or stock phrases that could be anyone’s",
+            "status": "supported",
+            "explanation": "Describing her journey simply as starting as a student and becoming a choreographer reads as a stock summary lacking distinct personal voice."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate provides a brief self-description of her transition from student to choreographer, matching level 2.",
+        "CR": "Because the answer consists solely of isolated sentence fragments without a supporting reason, the point is hard to follow, fitting level 2.",
+        "EV": "The response does not refer to anyone else or any social cause, showing no evidence for this parameter.",
+        "IJ": "She explicitly states that she has already acted over five years to become a choreographer, meeting the requirement for level 6.",
+        "CV": "The response conveys a stock progression phrase without an individual perspective or stated stance, placing it at level 2."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 4,
+          "descriptor": "Names a real choice, motivation or limitation of her own",
+          "missing_elements": [
+            "Names a real choice, motivation or limitation of her own"
+          ],
+          "explanation": "She mentions her change in role but does not name any underlying motivation, personal choice, or limitation."
+        },
+        "CR": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear point with a relevant reason",
+          "missing_elements": [
+            "Clear point with a relevant reason"
+          ],
+          "explanation": "The answer provides brief factual phrases rather than formulating a clear point backed by a reason."
+        },
+        "EV": {
+          "next_anchor_level": 2,
+          "descriptor": "Names a cause or label only",
+          "missing_elements": [
+            "Names a cause or label only"
+          ],
+          "explanation": "The response focuses strictly on her activity in choreography without naming any cause, label, or group affected."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "reflected on the result"
+          ],
+          "explanation": "While she has already acted, she provides no reflection on the outcome of her actions or what she learned."
+        },
+        "CV": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear position or goal with at least one personal detail",
+          "missing_elements": [
+            "Clear position or goal"
+          ],
+          "explanation": "Although she mentions her personal trajectory, she does not state a clear position or goal that she owns."
+        }
+      },
+      "levels": {
+        "SA": 2,
+        "CR": 2,
+        "EV": 0,
+        "IJ": 6,
+        "CV": 2
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 3.4,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"Started as student and became Choreographer.\"\n    ],\n    \"CR\": [\n      \"5 years. Choreography. Started as student and became Choreographer.\"\n    ],\n    \"EV\": [],\n    \"IJ\": [\n      \"Started as student and became Choreographer.\"\n    ],\n    \"CV\": [\n      \"Started as student and became Choreographer.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Generic self-description\",\n        \"status\": \"supported\",\n        \"explanation\": \"She describes her progression from student to choreographer in brief, generic terms without delving into her mindset.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"point hard to follow\",\n        \"status\": \"supported\",\n        \"explanation\": \"The text presents fragmented phrases without a clear premise or argument, making the overall point hard to follow.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"No evidence\",\n        \"status\": \"supported\",\n        \"explanation\": \"There is no mention of other people, communities affected, or differing choices.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"has already acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"She indicates she has already taken action over five years by training and becoming a choreographer.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Slogans or stock phrases that could be anyone’s\",\n        \"status\": \"supported\",\n        \"explanation\": \"Describing her journey simply as starting as a student and becoming a choreographer reads as a stock summary lacking distinct personal voice.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate provides a brief self-description of her transition from student to choreographer, matching level 2.\",\n    \"CR\": \"Because the answer consists solely of isolated sentence fragments without a supporting reason, the point is hard to follow, fitting level 2.\",\n    \"EV\": \"The response does not refer to anyone else or any social cause, showing no evidence for this parameter.\",\n    \"IJ\": \"She explicitly states that she has already acted over five years to become a choreographer, meeting the requirement for level 6.\",\n    \"CV\": \"The response conveys a stock progression phrase without an individual perspective or stated stance, placing it at level 2.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Names a real choice, motivation or limitation of her own\",\n      \"missing_elements\": [\n        \"Names a real choice, motivation or limitation of her own\"\n      ],\n      \"explanation\": \"She mentions her change in role but does not name any underlying motivation, personal choice, or limitation.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear point with a relevant reason\",\n      \"missing_elements\": [\n        \"Clear point with a relevant reason\"\n      ],\n      \"explanation\": \"The answer provides brief factual phrases rather than formulating a clear point backed by a reason.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 2,\n      \"descriptor\": \"Names a cause or label only\",\n      \"missing_elements\": [\n        \"Names a cause or label only\"\n      ],\n      \"explanation\": \"The response focuses strictly on her activity in choreography without naming any cause, label, or group affected.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"reflected on the result\"\n      ],\n      \"explanation\": \"While she has already acted, she provides no reflection on the outcome of her actions or what she learned.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear position or goal with at least one personal detail\",\n      \"missing_elements\": [\n        \"Clear position or goal\"\n      ],\n      \"explanation\": \"Although she mentions her personal trajectory, she does not state a clear position or goal that she owns.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 2,\n    \"CR\": 2,\n    \"EV\": 0,\n    \"IJ\": 6,\n    \"CV\": 2\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "15c2546aa65a5704f0df72e5f9a01c148ad2bda777b6ff34695c8b49fbd56267",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "15c2546aa65a5704f0df72e5f9a01c148ad2bda777b6ff34695c8b49fbd56267",
+      "answer_sha256": "2857cb72d5b2ecabd4e23be4fcd8d635c57677e5f93550869fc316ae3e248bae"
+    },
+    "Q2": {
+      "evidence": {
+        "SA": [
+          "very less time unless i feel my thinking is wrong."
+        ],
+        "CR": [
+          "very less time unless i feel my thinking is wrong."
+        ],
+        "EV": [],
+        "CV": []
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Generic self-description",
+            "status": "supported",
+            "explanation": "The candidate provides a generic statement about her tendency regarding when she changes her mind."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Opinion with no reason, or point hard to follow",
+            "status": "supported",
+            "explanation": "The response is a fragmented statement that is hard to follow and lacks an explanatory reason."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "No evidence",
+            "status": "supported",
+            "explanation": "The answer mentions no other individuals, consequences, or differing viewpoints."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "No position; entirely generic",
+            "status": "supported",
+            "explanation": "The candidate does not take a clear stance and provides an entirely generic statement."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate only provides a broad, generic description of her thinking without naming a specific choice, motivation, or limitation.",
+        "CR": "The response is an incomplete thought that is hard to follow and provides no reasoned argument.",
+        "EV": "There is no reference to any people affected or respect for other choices, providing no evidence of empathy or values.",
+        "CV": "The response offers no personal detail or clear stance, remaining completely generic."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 4,
+          "descriptor": "Names a real choice, motivation or limitation of her own",
+          "missing_elements": [
+            "Names a real choice, motivation or limitation of her own"
+          ],
+          "explanation": "The candidate does not identify any real choice, motivation, or limitation from her life."
+        },
+        "CR": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear point with a relevant reason",
+          "missing_elements": [
+            "Clear point with a relevant reason"
+          ],
+          "explanation": "The candidate does not make a clear point supported by a relevant reason."
+        },
+        "EV": {
+          "next_anchor_level": 2,
+          "descriptor": "Names a cause or label only",
+          "missing_elements": [
+            "Names a cause or label only"
+          ],
+          "explanation": "The candidate does not name any cause, label, or group affected."
+        },
+        "CV": {
+          "next_anchor_level": 2,
+          "descriptor": "Slogans or stock phrases that could be anyone’s",
+          "missing_elements": [
+            "Slogans or stock phrases that could be anyone’s"
+          ],
+          "explanation": "The response does not even include a recognizable slogan or stock phrase."
+        }
+      },
+      "levels": {
+        "SA": 2,
+        "CR": 2,
+        "EV": 0,
+        "CV": 0
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [],
+        "CV": []
+      },
+      "marks": 1.4,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"very less time unless i feel my thinking is wrong.\"\n    ],\n    \"CR\": [\n      \"very less time unless i feel my thinking is wrong.\"\n    ],\n    \"EV\": [],\n    \"CV\": []\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Generic self-description\",\n        \"status\": \"supported\",\n        \"explanation\": \"The candidate provides a generic statement about her tendency regarding when she changes her mind.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Opinion with no reason, or point hard to follow\",\n        \"status\": \"supported\",\n        \"explanation\": \"The response is a fragmented statement that is hard to follow and lacks an explanatory reason.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"No evidence\",\n        \"status\": \"supported\",\n        \"explanation\": \"The answer mentions no other individuals, consequences, or differing viewpoints.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"No position; entirely generic\",\n        \"status\": \"supported\",\n        \"explanation\": \"The candidate does not take a clear stance and provides an entirely generic statement.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate only provides a broad, generic description of her thinking without naming a specific choice, motivation, or limitation.\",\n    \"CR\": \"The response is an incomplete thought that is hard to follow and provides no reasoned argument.\",\n    \"EV\": \"There is no reference to any people affected or respect for other choices, providing no evidence of empathy or values.\",\n    \"CV\": \"The response offers no personal detail or clear stance, remaining completely generic.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Names a real choice, motivation or limitation of her own\",\n      \"missing_elements\": [\n        \"Names a real choice, motivation or limitation of her own\"\n      ],\n      \"explanation\": \"The candidate does not identify any real choice, motivation, or limitation from her life.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear point with a relevant reason\",\n      \"missing_elements\": [\n        \"Clear point with a relevant reason\"\n      ],\n      \"explanation\": \"The candidate does not make a clear point supported by a relevant reason.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 2,\n      \"descriptor\": \"Names a cause or label only\",\n      \"missing_elements\": [\n        \"Names a cause or label only\"\n      ],\n      \"explanation\": \"The candidate does not name any cause, label, or group affected.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 2,\n      \"descriptor\": \"Slogans or stock phrases that could be anyone’s\",\n      \"missing_elements\": [\n        \"Slogans or stock phrases that could be anyone’s\"\n      ],\n      \"explanation\": \"The response does not even include a recognizable slogan or stock phrase.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 2,\n    \"CR\": 2,\n    \"EV\": 0,\n    \"CV\": 0\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "7e4eb6b88bd5ab7e507b18910762899c1312202be15b0439faf23cb95327be33",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "7e4eb6b88bd5ab7e507b18910762899c1312202be15b0439faf23cb95327be33",
+      "answer_sha256": "c5774eab350ab3f652b7bbf1c3623f43b320329aa3b24071eaae36e06198fd31"
+    },
+    "Q3": {
+      "evidence": {
+        "CR": [
+          "beauty has one fixed definition that being fair, thin, tall, perfectly proportioned"
+        ],
+        "EV": [
+          "beauty has one fixed definition"
+        ],
+        "IJ": [
+          "challenging it in my own life"
+        ],
+        "CV": [
+          "challenging it in my own life"
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Opinion with no reason, or point hard to follow",
+            "status": "supported",
+            "explanation": "The candidate presents an opinion against rigid beauty standards but provides no explanation or reason for why girls should grow up without it."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Names a cause or label only",
+            "status": "supported",
+            "explanation": "The candidate names the issue of fixed beauty definitions without describing or exploring the people affected."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Vague intention",
+            "status": "supported",
+            "explanation": "Stating that she will challenge the belief in her own life indicates an intention, but specifies no actual steps."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Slogans or stock phrases that could be anyone’s",
+            "status": "supported",
+            "explanation": "The answer consists of familiar phrases about beauty definitions and challenging them internally, lacking personal specificity."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The candidate states an opinion about rejecting narrow beauty ideals, but does not provide any supporting reasoning.",
+        "EV": "The candidate labels the problem as a fixed definition of beauty, but does not identify who is impacted beyond restating the prompt's reference to girls.",
+        "IJ": "Challenging the belief in one's own life is a broad, unspecified intention rather than a concrete step.",
+        "CV": "The response expresses a conventional position using stock phrases without grounding it in any specific personal details."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear point with a relevant reason",
+          "missing_elements": [
+            "relevant reason"
+          ],
+          "explanation": "The answer clearly states what belief to reject, but offers no reason explaining why it should be abandoned."
+        },
+        "EV": {
+          "next_anchor_level": 4,
+          "descriptor": "Identifies who is affected",
+          "missing_elements": [
+            "Identifies who is affected"
+          ],
+          "explanation": "The candidate merely echoes the prompt's mention of girls rather than identifying who specifically is affected by this standard."
+        },
+        "IJ": {
+          "next_anchor_level": 4,
+          "descriptor": "Concrete action, feasibility unclear",
+          "missing_elements": [
+            "Concrete action"
+          ],
+          "explanation": "The candidate does not propose any tangible or concrete action to challenge the belief."
+        },
+        "CV": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear position or goal with at least one personal detail",
+          "missing_elements": [
+            "at least one personal detail"
+          ],
+          "explanation": "The candidate states a position but includes no personal details from her own life or experience."
+        }
+      },
+      "levels": {
+        "CR": 2,
+        "EV": 2,
+        "IJ": 2,
+        "CV": 2
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 2.0,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"beauty has one fixed definition that being fair, thin, tall, perfectly proportioned\"\n    ],\n    \"EV\": [\n      \"beauty has one fixed definition\"\n    ],\n    \"IJ\": [\n      \"challenging it in my own life\"\n    ],\n    \"CV\": [\n      \"challenging it in my own life\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Opinion with no reason, or point hard to follow\",\n        \"status\": \"supported\",\n        \"explanation\": \"The candidate presents an opinion against rigid beauty standards but provides no explanation or reason for why girls should grow up without it.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Names a cause or label only\",\n        \"status\": \"supported\",\n        \"explanation\": \"The candidate names the issue of fixed beauty definitions without describing or exploring the people affected.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Vague intention\",\n        \"status\": \"supported\",\n        \"explanation\": \"Stating that she will challenge the belief in her own life indicates an intention, but specifies no actual steps.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Slogans or stock phrases that could be anyone’s\",\n        \"status\": \"supported\",\n        \"explanation\": \"The answer consists of familiar phrases about beauty definitions and challenging them internally, lacking personal specificity.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The candidate states an opinion about rejecting narrow beauty ideals, but does not provide any supporting reasoning.\",\n    \"EV\": \"The candidate labels the problem as a fixed definition of beauty, but does not identify who is impacted beyond restating the prompt's reference to girls.\",\n    \"IJ\": \"Challenging the belief in one's own life is a broad, unspecified intention rather than a concrete step.\",\n    \"CV\": \"The response expresses a conventional position using stock phrases without grounding it in any specific personal details.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear point with a relevant reason\",\n      \"missing_elements\": [\n        \"relevant reason\"\n      ],\n      \"explanation\": \"The answer clearly states what belief to reject, but offers no reason explaining why it should be abandoned.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Identifies who is affected\",\n      \"missing_elements\": [\n        \"Identifies who is affected\"\n      ],\n      \"explanation\": \"The candidate merely echoes the prompt's mention of girls rather than identifying who specifically is affected by this standard.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Concrete action, feasibility unclear\",\n      \"missing_elements\": [\n        \"Concrete action\"\n      ],\n      \"explanation\": \"The candidate does not propose any tangible or concrete action to challenge the belief.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear position or goal with at least one personal detail\",\n      \"missing_elements\": [\n        \"at least one personal detail\"\n      ],\n      \"explanation\": \"The candidate states a position but includes no personal details from her own life or experience.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 2,\n    \"EV\": 2,\n    \"IJ\": 2,\n    \"CV\": 2\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "cfb68f4b4c505b3d81264b6050a3558dfe4c7493045ecba7d66c21980d2d7af3",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "cfb68f4b4c505b3d81264b6050a3558dfe4c7493045ecba7d66c21980d2d7af3",
+      "answer_sha256": "d08b9ce2acd7edf04881e5d3671cdb489506bf75e6f6d8ffe4cc09439baf8f88"
+    },
+    "Q4": {
+      "evidence": {
+        "CR": [
+          "We constantly see other people’s achievements, appearances, lifestyles, and opportunities."
+        ],
+        "EV": [
+          "talk openly about failures, insecurities, expectations, and personal growth"
+        ],
+        "IJ": [
+          "create an opportunity where we can talk openly about failures, insecurities, expectations"
+        ],
+        "CV": [
+          "young people, especially girls, compare themselves to others."
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Clear point",
+            "status": "supported",
+            "explanation": "The candidate clearly identifies the problem of young people, especially girls, comparing themselves to others."
+          },
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "She grounds the reason in her direct observation of constantly seeing other people's achievements, appearances, lifestyles, and opportunities."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Identifies who is affected",
+            "status": "supported",
+            "explanation": "She specifies that young people, especially girls, are affected."
+          },
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She shows that comparing themselves across appearances and achievements leads to insecurities and pressure around expectations."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Realistic step within her means that fits the problem",
+            "status": "supported",
+            "explanation": "Creating a forum or conversation space among peers to discuss failures, insecurities, and expectations fits the issue and is within her means."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Slogans or stock phrases that could be anyone’s",
+            "status": "supported",
+            "explanation": "The answer frames a clear perspective, but the language describes a general group experience that could belong to anyone."
+          },
+          {
+            "descriptor_element": "Clear position or goal with at least one personal detail",
+            "status": "unsupported",
+            "explanation": "While she sets a clear position and goal, she includes no specific personal details from her own life beyond the collective 'we'."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The candidate articulates a clear point supported by an observation of constant exposure to others' curated achievements and lifestyles. Hence, level 6 is satisfied.",
+        "EV": "The candidate identifies the demographic affected (young people, especially girls) and explains how and why comparison drives insecurities and unstated expectations, meeting level 6.",
+        "IJ": "Proposing an open conversation space about insecurities and failures is a realistic first step that directly addresses the problem and is achievable within her means, satisfying level 6.",
+        "CV": "The candidate has a clear goal and viewpoint, but does not provide any specific personal detail from her own individual experience, sitting between level 2 and level 4 at level 3."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The candidate does not consider another perspective or discuss any trade-offs involved in tackling the issue."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "The answer does not recognise differing circumstances among people, respect alternative choices, or explore broader consequences."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "Has acted and reflected on the result",
+            "how she’d know it worked"
+          ],
+          "explanation": "She has not yet executed the step, nor does she explain how she would evaluate or know whether the open discussion succeeded."
+        },
+        "CV": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear position or goal with at least one personal detail",
+          "missing_elements": [
+            "at least one personal detail"
+          ],
+          "explanation": "The answer speaks generally about 'we' and 'young people' without providing an individual personal detail from her own life."
+        }
+      },
+      "levels": {
+        "CR": 6,
+        "EV": 6,
+        "IJ": 6,
+        "CV": 3
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 5.55,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"We constantly see other people’s achievements, appearances, lifestyles, and opportunities.\"\n    ],\n    \"EV\": [\n      \"talk openly about failures, insecurities, expectations, and personal growth\"\n    ],\n    \"IJ\": [\n      \"create an opportunity where we can talk openly about failures, insecurities, expectations\"\n    ],\n    \"CV\": [\n      \"young people, especially girls, compare themselves to others.\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Clear point\",\n        \"status\": \"supported\",\n        \"explanation\": \"The candidate clearly identifies the problem of young people, especially girls, comparing themselves to others.\"\n      },\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She grounds the reason in her direct observation of constantly seeing other people's achievements, appearances, lifestyles, and opportunities.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Identifies who is affected\",\n        \"status\": \"supported\",\n        \"explanation\": \"She specifies that young people, especially girls, are affected.\"\n      },\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She shows that comparing themselves across appearances and achievements leads to insecurities and pressure around expectations.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Realistic step within her means that fits the problem\",\n        \"status\": \"supported\",\n        \"explanation\": \"Creating a forum or conversation space among peers to discuss failures, insecurities, and expectations fits the issue and is within her means.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Slogans or stock phrases that could be anyone’s\",\n        \"status\": \"supported\",\n        \"explanation\": \"The answer frames a clear perspective, but the language describes a general group experience that could belong to anyone.\"\n      },\n      {\n        \"descriptor_element\": \"Clear position or goal with at least one personal detail\",\n        \"status\": \"unsupported\",\n        \"explanation\": \"While she sets a clear position and goal, she includes no specific personal details from her own life beyond the collective 'we'.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The candidate articulates a clear point supported by an observation of constant exposure to others' curated achievements and lifestyles. Hence, level 6 is satisfied.\",\n    \"EV\": \"The candidate identifies the demographic affected (young people, especially girls) and explains how and why comparison drives insecurities and unstated expectations, meeting level 6.\",\n    \"IJ\": \"Proposing an open conversation space about insecurities and failures is a realistic first step that directly addresses the problem and is achievable within her means, satisfying level 6.\",\n    \"CV\": \"The candidate has a clear goal and viewpoint, but does not provide any specific personal detail from her own individual experience, sitting between level 2 and level 4 at level 3.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The candidate does not consider another perspective or discuss any trade-offs involved in tackling the issue.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"The answer does not recognise differing circumstances among people, respect alternative choices, or explore broader consequences.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"Has acted and reflected on the result\",\n        \"how she’d know it worked\"\n      ],\n      \"explanation\": \"She has not yet executed the step, nor does she explain how she would evaluate or know whether the open discussion succeeded.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear position or goal with at least one personal detail\",\n      \"missing_elements\": [\n        \"at least one personal detail\"\n      ],\n      \"explanation\": \"The answer speaks generally about 'we' and 'young people' without providing an individual personal detail from her own life.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 6,\n    \"CV\": 3\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "aef53866f52bf66be7560a8c749e0c2a86efda04a4d42cf76c24695e2a3409d2",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "aef53866f52bf66be7560a8c749e0c2a86efda04a4d42cf76c24695e2a3409d2",
+      "answer_sha256": "3521d9cb79d2bf8c3234b108f4dd4c0b445dbbe2b62a31bbaa9c86618f835423"
+    },
+    "Q5": {
+      "evidence": {
+        "SA": [
+          "to overthink important decisions",
+          "I care deeply about doing things well"
+        ],
+        "IJ": [],
+        "CV": [
+          "I care deeply about doing things well",
+          "worrying about making the wrong choice"
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Names a real choice, motivation or limitation of her own",
+            "status": "supported",
+            "explanation": "She identifies her limitation of overthinking decisions and her underlying motivation to do things well."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "No action mentioned",
+            "status": "supported",
+            "explanation": "The answer identifies an issue but does not mention any action or step taken to address it."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Slogans or stock phrases that could be anyone’s",
+            "status": "supported",
+            "explanation": "The explanation relies on standard stock phrases about overthinking and caring deeply that could apply to anyone."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate clearly names her own limitation (overthinking) and motivation (caring deeply about doing things well), satisfying level 4.",
+        "IJ": "The candidate answers only the first part of the prompt and omits what she is doing about it, leaving no action mentioned.",
+        "CV": "The response expresses a familiar sentiment using common phrases without grounding it in any specific personal detail from her life, fitting level 2."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 6,
+          "descriptor": "Explains what she learned, with a concrete example",
+          "missing_elements": [
+            "Explains what she learned",
+            "with a concrete example"
+          ],
+          "explanation": "The candidate does not provide a concrete example of an experience or explain what she learned from it."
+        },
+        "IJ": {
+          "next_anchor_level": 2,
+          "descriptor": "Vague intention",
+          "missing_elements": [
+            "Vague intention"
+          ],
+          "explanation": "The answer mentions no intention or step whatsoever toward addressing the issue."
+        },
+        "CV": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear position or goal with at least one personal detail",
+          "missing_elements": [
+            "at least one personal detail"
+          ],
+          "explanation": "The candidate does not include any specific personal detail from her life to anchor her statement."
+        }
+      },
+      "levels": {
+        "SA": 4,
+        "IJ": 0,
+        "CV": 2
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true,
+          true
+        ],
+        "IJ": [],
+        "CV": [
+          true,
+          true
+        ]
+      },
+      "marks": 2.6,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"to overthink important decisions\",\n      \"I care deeply about doing things well\"\n    ],\n    \"IJ\": [],\n    \"CV\": [\n      \"I care deeply about doing things well\",\n      \"worrying about making the wrong choice\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Names a real choice, motivation or limitation of her own\",\n        \"status\": \"supported\",\n        \"explanation\": \"She identifies her limitation of overthinking decisions and her underlying motivation to do things well.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"No action mentioned\",\n        \"status\": \"supported\",\n        \"explanation\": \"The answer identifies an issue but does not mention any action or step taken to address it.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Slogans or stock phrases that could be anyone’s\",\n        \"status\": \"supported\",\n        \"explanation\": \"The explanation relies on standard stock phrases about overthinking and caring deeply that could apply to anyone.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate clearly names her own limitation (overthinking) and motivation (caring deeply about doing things well), satisfying level 4.\",\n    \"IJ\": \"The candidate answers only the first part of the prompt and omits what she is doing about it, leaving no action mentioned.\",\n    \"CV\": \"The response expresses a familiar sentiment using common phrases without grounding it in any specific personal detail from her life, fitting level 2.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Explains what she learned, with a concrete example\",\n      \"missing_elements\": [\n        \"Explains what she learned\",\n        \"with a concrete example\"\n      ],\n      \"explanation\": \"The candidate does not provide a concrete example of an experience or explain what she learned from it.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 2,\n      \"descriptor\": \"Vague intention\",\n      \"missing_elements\": [\n        \"Vague intention\"\n      ],\n      \"explanation\": \"The answer mentions no intention or step whatsoever toward addressing the issue.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear position or goal with at least one personal detail\",\n      \"missing_elements\": [\n        \"at least one personal detail\"\n      ],\n      \"explanation\": \"The candidate does not include any specific personal detail from her life to anchor her statement.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 4,\n    \"IJ\": 0,\n    \"CV\": 2\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "9e5f4f2bab3282c50e2457f5c9be2ce84775c6daa37846da798789768f3c9f27",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "9e5f4f2bab3282c50e2457f5c9be2ce84775c6daa37846da798789768f3c9f27",
+      "answer_sha256": "1c2834deeea6741bd5c0e9c933fb79e7b1ba9baa22b152d53fadfbdfc65490ec"
+    }
+  },
+  "unable_to_evaluate_count": 0,
+  "total_is_partial": false,
+  "written_total": 14.95,
+  "written_total_out_of": 40
+}

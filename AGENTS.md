@@ -1,11 +1,12 @@
 # Project: Miss Ananti India Round-1 AI screening
 
 ## Current stage
-Written scoring (Task 6). Earlier work (transcription, identity) is finished or on hold; its rules below stay valid.
+Video scoring, step V1 (rubric file + calculator, no AI calls). Written scoring and its final report are finished. Earlier work (transcription, identity) is finished or on hold; its rules below stay valid.
 
 ## Hard rules
-- For transcription, send AUDIO ONLY to Gemini, never video. No analysis of face, body, clothing,
-  background, expression, ever.
+- For transcription, send AUDIO ONLY to Gemini, never video. Looks (face, body, skin tone, makeup,
+  clothing, background, video quality) must never be scored in any module. Video scoring (Module D
+  below) is a separate step approved by BD and my supervisor.
 - API key only from .env (GEMINI_API_KEY). Never print, log or commit it.
 - Never commit data/, outputs/, .env, videos, audio, transcripts.
 - Transcription must be verbatim: no translation, no grammar fixing, no summary.
@@ -40,14 +41,13 @@ Written scoring (Task 6). Earlier work (transcription, identity) is finished or 
   transcript_elevenlabs_v2.txt (with key term "Miss Ananti India").
 - Names/cities are still context only and never scoring evidence.
 
-## Written scoring (Task 6, active)
+## Written scoring (Task 6, finished)
 Source of truth: docs/Miss_Ananti_Written_Screening_Framework_v1_0.docx (v1.0 Frozen) and
 config/rubric_written_v1.0.yaml. Calculator: score_written.py (tests in tests/).
 Copy rubric wording exactly. Never invent criteria, weights or thresholds; TODO_BD otherwise.
 Python computes all marks; the LLM outputs only levels, evidence phrases, short reasoning and flags.
 Written answers in data/<id>/written_answers.json are real sample-candidate text from BD. Never copy them into code, docs or chat.
 Do not score grammar, spelling, language, fluency, viewpoint, scale/money/prestige.
-Video scoring: on hold until BD confirms the final video questions and duration.
 
 - Task 6: only the question text, the rubric text and the candidate answer go to Gemini (BD approved).
   Judge levels are never shown to the AI. Prompt text lives in prompts/score_written_v1.txt.
@@ -58,4 +58,21 @@ Video scoring: on hold until BD confirms the final video questions and duration.
   lists only 0/2/4/6/8); "consistent across answers" in level 8 of SA and CV vs "judging only that
   answer"; Section 13 items (languages, brand-values list, cutoff band, audit sample).
 
-## Final written report (Task 10): outputs/written_final_report.xlsx (Review 9 columns, Totals 7, Rubric), AI results only. Command: written_report.py <id>; export without Gemini: written_report.py --export-only <id>. Append only, never modify earlier contestants, never rescore a contestant already in the report, never append a contestant with a failed question.
+## Final written report (Task 10)
+- The final report is outputs/written_final_report.xlsx (Review 9 columns, Totals 7, Rubric). AI results only.
+- Command: written_report.py <id>; export without Gemini: written_report.py --export-only <id>.
+- Append only, never modify earlier contestants, never rescore a contestant already in the report,
+  never append a contestant with a failed question.
+
+## Video scoring (Module D)
+- Source of truth: docs/Miss_Ananti_India_AI_Video_Screening_Framework_v1_0.pdf. Copy its wording exactly
+  in config files; never invent criteria, weights or thresholds; list every ambiguity instead of deciding it.
+- BD and my supervisor clarified verbally (to be confirmed in writing): beauty/looks and video quality are
+  never scored; delivery signals (hesitation, restarts, reading from a script) count only for Composure
+  and the POSSIBLE_HEAVY_READING flag, which never deducts marks.
+- Step V1: config/rubric_video_v1.0.yaml and score_video.py (calculator). No LLM calls. Marks come only from
+  score_video.py: parameter marks = level / 8 x the parameter's maximum marks (maximum marks read from the
+  YAML).
+- Step V3 (later, exploratory): the video is sent to Gemini; the prompt text lives in
+  prompts/score_video_v1.txt. Results stay in outputs/<id>/video_ai_run*.json and never enter the final
+  written report or any official score.

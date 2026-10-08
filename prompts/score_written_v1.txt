@@ -19,7 +19,7 @@ HOW TO SCORE:
 2. For each parameter give an evidence phrase: a short piece copied EXACTLY, letter for letter,
    from the candidate answer (at most 15 words) that supports the level. If the level is 0,
    the evidence phrase must be an empty string.
-3. For each parameter give one short sentence of reasoning in English.
+3. For each parameter give one short sentence of reasoning and concise explanation why did you score that specific number, think like a human beauty pageant judge in English.
 4. The answer may be in English, Hindi, Hinglish or another Indian language. Judge the meaning.
 
 DO NOT SCORE (these must never raise or lower any level):

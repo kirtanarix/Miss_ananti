@@ -1,0 +1,194 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Written v2 AI response",
+  "description": "Every parameter map must contain exactly the active codes for its question. Runtime validation additionally checks level-dependent evidence, next-anchor identity/text and quote presence.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evidence",
+    "element_checks",
+    "reasoning",
+    "next_level_explanation",
+    "levels",
+    "flags"
+  ],
+  "properties": {
+    "evidence": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "SA",
+          "CR",
+          "EV",
+          "IJ",
+          "CV"
+        ]
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/quotes"
+      }
+    },
+    "element_checks": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "SA",
+          "CR",
+          "EV",
+          "IJ",
+          "CV"
+        ]
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/checks"
+      }
+    },
+    "reasoning": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "SA",
+          "CR",
+          "EV",
+          "IJ",
+          "CV"
+        ]
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "next_level_explanation": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "SA",
+          "CR",
+          "EV",
+          "IJ",
+          "CV"
+        ]
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/next"
+      }
+    },
+    "levels": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "SA",
+          "CR",
+          "EV",
+          "IJ",
+          "CV"
+        ]
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/level"
+      }
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "BLANK_OR_OFF_TOPIC",
+          "BRAND_VALUES_REVIEW",
+          "HARMFUL_CONTENT"
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 8
+    },
+    "quotes": {
+      "type": "array",
+      "maxItems": 2,
+      "items": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "checks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "descriptor_element",
+          "status",
+          "explanation"
+        ],
+        "properties": {
+          "descriptor_element": {
+            "$ref": "#/$defs/text"
+          },
+          "status": {
+            "enum": [
+              "supported",
+              "unsupported",
+              "not_assessable"
+            ]
+          },
+          "explanation": {
+            "$ref": "#/$defs/text"
+          }
+        }
+      }
+    },
+    "next": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "next_anchor_level",
+        "descriptor",
+        "missing_elements",
+        "explanation"
+      ],
+      "properties": {
+        "next_anchor_level": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "enum": [
+            2,
+            4,
+            6,
+            8,
+            null
+          ]
+        },
+        "descriptor": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "missing_elements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "explanation": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    }
+  }
+}

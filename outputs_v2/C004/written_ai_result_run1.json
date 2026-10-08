@@ -1,0 +1,706 @@
+{
+  "evaluation_version": "written_v2",
+  "candidate_id": "C004",
+  "run": 1,
+  "model": "gemini-3.8-flash",
+  "temperature": 0,
+  "generation_config": {
+    "temperature": 0,
+    "response_mime_type": "application/json"
+  },
+  "prompt_file": "prompts/score_written_v2.txt",
+  "prompt_sha256": "4c7f7416799941c99419eba98261c50d904c419419efac752525b9bb8f8fcbb1",
+  "rubric_file": "config/rubric_written_v1.0.yaml",
+  "rubric_version": "v1.0",
+  "rubric_version_source": "frozen source filename; YAML has no version field",
+  "rubric_sha256": "b77330e38130d1c3b576888159ed4c89479114404bff65506c64e5f8896c9610",
+  "run_date": "2026-10-07T18:12:32.151847+05:30",
+  "questions": {
+    "Q1": {
+      "evidence": {
+        "SA": [
+          "my skills aren't just for commercial aesthetics—they are a powerful tool"
+        ],
+        "CR": [
+          "local artisans in my hometown were struggling to sell their hand-woven crafts"
+        ],
+        "EV": [
+          "Crafting was their primary livelihood, and seeing their work go unnoticed deeply bothered me."
+        ],
+        "IJ": [
+          "offered pro-bono branding and visual identity design for five local artisan families.",
+          "Within three months, three of the families made their first online sales"
+        ],
+        "CV": [
+          "I started a weekend project where I offered pro-bono branding and visual identity design"
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Explains what she learned",
+            "status": "supported",
+            "explanation": "She explains learning that design can amplify marginalized voices and create economic impact."
+          },
+          {
+            "descriptor_element": "with a concrete example",
+            "status": "supported",
+            "explanation": "The learning is tied directly to her pro-bono branding work helping artisan families achieve online sales."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "Her reason for acting is grounded directly in observing local artisans in her hometown struggling with sales."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She highlights that crafting is the artisans' primary livelihood and that lack of digital access leaves them struggling."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Has acted",
+            "status": "supported",
+            "explanation": "She designed branding packages and catalogs and trained five artisan families."
+          },
+          {
+            "descriptor_element": "reflected on the result",
+            "status": "supported",
+            "explanation": "She tracks the tangible result of out-of-state sales and reflects on the broader economic and social impact."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Owns a clear stance",
+            "status": "supported",
+            "explanation": "She takes a clear personal stance on using her creative skills for community impact."
+          },
+          {
+            "descriptor_element": "answers rooted in specific personal detail",
+            "status": "supported",
+            "explanation": "The response is grounded in her personal background as a graphic design student assisting local artisans in her hometown."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate reflects on what she learned through a specific example of assisting artisans. It falls short of level 8 as it does not show how this experience changed her subsequent actions.",
+        "CR": "The response makes a clear point supported by reasons drawn from firsthand observations of her hometown artisans. It does not consider counter-arguments or trade-offs.",
+        "EV": "She demonstrates empathy by explaining how the lack of market access affected the artisans' primary livelihoods. She does not evaluate differing choices or conflicting perspectives.",
+        "IJ": "She undertook a feasible initiative within her skills and evaluated the outcome through sales data and social reflection.",
+        "CV": "The response conveys authentic voice and clear conviction rooted in specific personal experiences from her college years."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 8,
+          "descriptor": "Specific reflection showing how an experience changed what she does; consistent across answers",
+          "missing_elements": [
+            "showing how an experience changed what she does"
+          ],
+          "explanation": "The candidate explains a shift in understanding her skills, but does not provide specific reflection showing how the experience changed what she does going forward."
+        },
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The response follows a linear narrative without weighing competing viewpoints or trade-offs."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "While she understands the artisans' economic situation, she does not explore differing choices or wider systemic consequences."
+        },
+        "IJ": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "No higher level exists."
+        },
+        "CV": {
+          "next_anchor_level": 8,
+          "descriptor": "Consistent conviction across answers, distinctly her own, persuasive",
+          "missing_elements": [
+            "Consistent conviction across answers",
+            "distinctly her own, persuasive"
+          ],
+          "explanation": "Consistency across answers cannot be assessed from a single response, and the voice, while authentic, does not reach the distinctive depth required for level 8."
+        }
+      },
+      "levels": {
+        "SA": 6,
+        "CR": 6,
+        "EV": 6,
+        "IJ": 8,
+        "CV": 6
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true,
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 6.8,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"my skills aren't just for commercial aesthetics—they are a powerful tool\"\n    ],\n    \"CR\": [\n      \"local artisans in my hometown were struggling to sell their hand-woven crafts\"\n    ],\n    \"EV\": [\n      \"Crafting was their primary livelihood, and seeing their work go unnoticed deeply bothered me.\"\n    ],\n    \"IJ\": [\n      \"offered pro-bono branding and visual identity design for five local artisan families.\",\n      \"Within three months, three of the families made their first online sales\"\n    ],\n    \"CV\": [\n      \"I started a weekend project where I offered pro-bono branding and visual identity design\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Explains what she learned\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains learning that design can amplify marginalized voices and create economic impact.\"\n      },\n      {\n        \"descriptor_element\": \"with a concrete example\",\n        \"status\": \"supported\",\n        \"explanation\": \"The learning is tied directly to her pro-bono branding work helping artisan families achieve online sales.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her reason for acting is grounded directly in observing local artisans in her hometown struggling with sales.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She highlights that crafting is the artisans' primary livelihood and that lack of digital access leaves them struggling.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Has acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"She designed branding packages and catalogs and trained five artisan families.\"\n      },\n      {\n        \"descriptor_element\": \"reflected on the result\",\n        \"status\": \"supported\",\n        \"explanation\": \"She tracks the tangible result of out-of-state sales and reflects on the broader economic and social impact.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Owns a clear stance\",\n        \"status\": \"supported\",\n        \"explanation\": \"She takes a clear personal stance on using her creative skills for community impact.\"\n      },\n      {\n        \"descriptor_element\": \"answers rooted in specific personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"The response is grounded in her personal background as a graphic design student assisting local artisans in her hometown.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate reflects on what she learned through a specific example of assisting artisans. It falls short of level 8 as it does not show how this experience changed her subsequent actions.\",\n    \"CR\": \"The response makes a clear point supported by reasons drawn from firsthand observations of her hometown artisans. It does not consider counter-arguments or trade-offs.\",\n    \"EV\": \"She demonstrates empathy by explaining how the lack of market access affected the artisans' primary livelihoods. She does not evaluate differing choices or conflicting perspectives.\",\n    \"IJ\": \"She undertook a feasible initiative within her skills and evaluated the outcome through sales data and social reflection.\",\n    \"CV\": \"The response conveys authentic voice and clear conviction rooted in specific personal experiences from her college years.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Specific reflection showing how an experience changed what she does; consistent across answers\",\n      \"missing_elements\": [\n        \"showing how an experience changed what she does\"\n      ],\n      \"explanation\": \"The candidate explains a shift in understanding her skills, but does not provide specific reflection showing how the experience changed what she does going forward.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The response follows a linear narrative without weighing competing viewpoints or trade-offs.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"While she understands the artisans' economic situation, she does not explore differing choices or wider systemic consequences.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"No higher level exists.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Consistent conviction across answers, distinctly her own, persuasive\",\n      \"missing_elements\": [\n        \"Consistent conviction across answers\",\n        \"distinctly her own, persuasive\"\n      ],\n      \"explanation\": \"Consistency across answers cannot be assessed from a single response, and the voice, while authentic, does not reach the distinctive depth required for level 8.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 6,\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 8,\n    \"CV\": 6\n  },\n  \"flags\": []\n}",
+      "attempts": 2,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "a912828e25f310d209626caa248d47ce705c8401bfad5b89b8cdfc3d760b97a9",
+          "validator_error": "CR: quote 1 exceeds 15 words",
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        },
+        {
+          "attempt": 2,
+          "prompt_sha256": "79ab1ab0009b34faf1aa7b614027af82c9f081c6208f4e56df8b4cf90c6018f0",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "a912828e25f310d209626caa248d47ce705c8401bfad5b89b8cdfc3d760b97a9",
+      "answer_sha256": "c713762a4b4a255241f2559530cc6f3a11aaab1aaa54a4c2eba627c3f8849a2d"
+    },
+    "Q2": {
+      "evidence": {
+        "SA": [
+          "I realized that functional design isn't about personal artistic ego; it’s about accessibility"
+        ],
+        "CR": [
+          "the simple visual communicated the health guidelines significantly faster and clearer"
+        ],
+        "EV": [
+          "communicated the health guidelines significantly faster and clearer to people of diverse backgrounds."
+        ],
+        "CV": [
+          "True design excellence lies in making complex messages clear, not complex."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Explains what she learned",
+            "status": "supported",
+            "explanation": "She explains realizing that functional design prioritizes accessibility and clarity over personal artistic ego."
+          },
+          {
+            "descriptor_element": "with a concrete example",
+            "status": "supported",
+            "explanation": "She describes the disagreement and focus group testing during a public health awareness campaign."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Considers another view or trade-off",
+            "status": "supported",
+            "explanation": "She weighs her initial view on artistic integrity against the project manager's view on clarity, evaluating the trade-off through testing."
+          },
+          {
+            "descriptor_element": "clear logic throughout",
+            "status": "supported",
+            "explanation": "The progression from disagreement to testing to changing her mind follows a coherent, well-structured logical chain."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She explains that the simplified graphic allowed people of diverse backgrounds to understand health guidelines significantly faster and clearer."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Owns a clear stance",
+            "status": "supported",
+            "explanation": "She takes a firm stance that design excellence means clear communication rather than ego-driven complexity."
+          },
+          {
+            "descriptor_element": "answers rooted in specific personal detail",
+            "status": "supported",
+            "explanation": "Her position is directly grounded in her own past project and professional evolution."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate explains her personal growth and shifts in mindset with a concrete example from a public health campaign.",
+        "CR": "The response clearly balances two competing viewpoints and trade-offs, supported by a logical, evidence-based resolution.",
+        "EV": "The candidate identifies the audience (people of diverse backgrounds) and shows how design clarity directly affects their comprehension of public health guidance.",
+        "CV": "She speaks in an authentic personal voice, articulating a clear, owned philosophy grounded in her personal design experience."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 8,
+          "descriptor": "Specific reflection showing how an experience changed what she does; consistent across answers",
+          "missing_elements": [
+            "showing how an experience changed what she does"
+          ],
+          "explanation": "The answer explains a shift in perspective and mindset, but does not detail how this change manifested in subsequent concrete actions she took in her work."
+        },
+        "CR": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "The response satisfies level 8; no higher level exists."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "While she notes diverse backgrounds and faster comprehension, she does not detail their differing circumstances or broader consequences beyond basic focus group testing."
+        },
+        "CV": {
+          "next_anchor_level": 8,
+          "descriptor": "Consistent conviction across answers, distinctly her own, persuasive",
+          "missing_elements": [
+            "distinctly her own, persuasive"
+          ],
+          "explanation": "While clear and personal, the conclusion draws on a fairly familiar design aphorism rather than reaching a distinctly individual voice."
+        }
+      },
+      "levels": {
+        "SA": 6,
+        "CR": 8,
+        "EV": 6,
+        "CV": 6
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 6.9,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"I realized that functional design isn't about personal artistic ego; it’s about accessibility\"\n    ],\n    \"CR\": [\n      \"the simple visual communicated the health guidelines significantly faster and clearer\"\n    ],\n    \"EV\": [\n      \"communicated the health guidelines significantly faster and clearer to people of diverse backgrounds.\"\n    ],\n    \"CV\": [\n      \"True design excellence lies in making complex messages clear, not complex.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Explains what she learned\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains realizing that functional design prioritizes accessibility and clarity over personal artistic ego.\"\n      },\n      {\n        \"descriptor_element\": \"with a concrete example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She describes the disagreement and focus group testing during a public health awareness campaign.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Considers another view or trade-off\",\n        \"status\": \"supported\",\n        \"explanation\": \"She weighs her initial view on artistic integrity against the project manager's view on clarity, evaluating the trade-off through testing.\"\n      },\n      {\n        \"descriptor_element\": \"clear logic throughout\",\n        \"status\": \"supported\",\n        \"explanation\": \"The progression from disagreement to testing to changing her mind follows a coherent, well-structured logical chain.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that the simplified graphic allowed people of diverse backgrounds to understand health guidelines significantly faster and clearer.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Owns a clear stance\",\n        \"status\": \"supported\",\n        \"explanation\": \"She takes a firm stance that design excellence means clear communication rather than ego-driven complexity.\"\n      },\n      {\n        \"descriptor_element\": \"answers rooted in specific personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her position is directly grounded in her own past project and professional evolution.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate explains her personal growth and shifts in mindset with a concrete example from a public health campaign.\",\n    \"CR\": \"The response clearly balances two competing viewpoints and trade-offs, supported by a logical, evidence-based resolution.\",\n    \"EV\": \"The candidate identifies the audience (people of diverse backgrounds) and shows how design clarity directly affects their comprehension of public health guidance.\",\n    \"CV\": \"She speaks in an authentic personal voice, articulating a clear, owned philosophy grounded in her personal design experience.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Specific reflection showing how an experience changed what she does; consistent across answers\",\n      \"missing_elements\": [\n        \"showing how an experience changed what she does\"\n      ],\n      \"explanation\": \"The answer explains a shift in perspective and mindset, but does not detail how this change manifested in subsequent concrete actions she took in her work.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"The response satisfies level 8; no higher level exists.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"While she notes diverse backgrounds and faster comprehension, she does not detail their differing circumstances or broader consequences beyond basic focus group testing.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Consistent conviction across answers, distinctly her own, persuasive\",\n      \"missing_elements\": [\n        \"distinctly her own, persuasive\"\n      ],\n      \"explanation\": \"While clear and personal, the conclusion draws on a fairly familiar design aphorism rather than reaching a distinctly individual voice.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 6,\n    \"CR\": 8,\n    \"EV\": 6,\n    \"CV\": 6\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "70e1bb0f42c77d97140f16fad21fcb9d328e6d66d5ce697e228cac3f5533be8d",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "70e1bb0f42c77d97140f16fad21fcb9d328e6d66d5ce697e228cac3f5533be8d",
+      "answer_sha256": "10d5ec517fcbb2f66c71932531c75ca5400c7a8e04bb5ceb274062c6692d9975"
+    },
+    "Q3": {
+      "evidence": {
+        "CR": [
+          "Working in graphic design, I see daily how images are retouched, altered, and polished"
+        ],
+        "EV": [
+          "creating an impossible ideal that damages young girls' self-esteem and sense of self-worth."
+        ],
+        "IJ": [
+          "Beyond my work, I mentor young girls through design workshops"
+        ],
+        "CV": [
+          "In my own design practice, I choose to work with real, diverse imagery"
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "She grounds her reasoning in her direct professional experience in graphic design seeing images retouched daily."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She explains that the impossible ideal damages girls' self-esteem and causes them to internalize altered media as personal shortcomings."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Has already acted",
+            "status": "supported",
+            "explanation": "She has already taken action through her own design practice and by conducting mentoring workshops for young girls."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Owns a clear stance",
+            "status": "supported",
+            "explanation": "She articulates a clear and committed stance against curated, airbrushed media standards."
+          },
+          {
+            "descriptor_element": "Answers rooted in specific personal detail",
+            "status": "supported",
+            "explanation": "Her perspective is rooted in her specific day-to-day work in graphic design and her design workshops."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The candidate clearly explains why narrow beauty standards are harmful, drawing directly from her professional observation in graphic design.",
+        "EV": "The response shows how curated imagery affects young girls by explaining that it harms their self-worth and leads them to internalize artificial standards.",
+        "IJ": "The candidate has already taken action within her means by implementing unfiltered imagery in her design practice and mentoring young girls in workshops.",
+        "CV": "The response conveys an authentic personal voice anchored in her real-world profession and personal design choices."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The answer does not present or evaluate counterarguments or trade-offs regarding visual editing and commercial standards."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "The answer focuses on the negative harm without exploring differing circumstances or respecting diverse personal choices."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "reflected on the result",
+            "how she’d know it worked"
+          ],
+          "explanation": "While she mentions past and ongoing actions, she does not reflect on the concrete results achieved or describe how she measures success."
+        },
+        "CV": {
+          "next_anchor_level": 8,
+          "descriptor": "Consistent conviction across answers, distinctly her own, persuasive",
+          "missing_elements": [
+            "Consistent conviction across answers",
+            "distinctly her own, persuasive"
+          ],
+          "explanation": "Consistency across answers could not be checked from one answer. While clearly personalized, the voice does not reach the exceptional level of distinctive persuasion required for level 8."
+        }
+      },
+      "levels": {
+        "CR": 6,
+        "EV": 6,
+        "IJ": 6,
+        "CV": 6
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 6.0,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"Working in graphic design, I see daily how images are retouched, altered, and polished\"\n    ],\n    \"EV\": [\n      \"creating an impossible ideal that damages young girls' self-esteem and sense of self-worth.\"\n    ],\n    \"IJ\": [\n      \"Beyond my work, I mentor young girls through design workshops\"\n    ],\n    \"CV\": [\n      \"In my own design practice, I choose to work with real, diverse imagery\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She grounds her reasoning in her direct professional experience in graphic design seeing images retouched daily.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that the impossible ideal damages girls' self-esteem and causes them to internalize altered media as personal shortcomings.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Has already acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"She has already taken action through her own design practice and by conducting mentoring workshops for young girls.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Owns a clear stance\",\n        \"status\": \"supported\",\n        \"explanation\": \"She articulates a clear and committed stance against curated, airbrushed media standards.\"\n      },\n      {\n        \"descriptor_element\": \"Answers rooted in specific personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her perspective is rooted in her specific day-to-day work in graphic design and her design workshops.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The candidate clearly explains why narrow beauty standards are harmful, drawing directly from her professional observation in graphic design.\",\n    \"EV\": \"The response shows how curated imagery affects young girls by explaining that it harms their self-worth and leads them to internalize artificial standards.\",\n    \"IJ\": \"The candidate has already taken action within her means by implementing unfiltered imagery in her design practice and mentoring young girls in workshops.\",\n    \"CV\": \"The response conveys an authentic personal voice anchored in her real-world profession and personal design choices.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The answer does not present or evaluate counterarguments or trade-offs regarding visual editing and commercial standards.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"The answer focuses on the negative harm without exploring differing circumstances or respecting diverse personal choices.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"reflected on the result\",\n        \"how she’d know it worked\"\n      ],\n      \"explanation\": \"While she mentions past and ongoing actions, she does not reflect on the concrete results achieved or describe how she measures success.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Consistent conviction across answers, distinctly her own, persuasive\",\n      \"missing_elements\": [\n        \"Consistent conviction across answers\",\n        \"distinctly her own, persuasive\"\n      ],\n      \"explanation\": \"Consistency across answers could not be checked from one answer. While clearly personalized, the voice does not reach the exceptional level of distinctive persuasion required for level 8.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 6,\n    \"CV\": 6\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "ef5084572d831d44a5fc419c31d5052e90064f3730574e4c6aac626c4de1a26c",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "ef5084572d831d44a5fc419c31d5052e90064f3730574e4c6aac626c4de1a26c",
+      "answer_sha256": "5f8a24c863814b05e84496dc0e27006e4ae7bb6ece131d3202f1f5dac7819622"
+    },
+    "Q4": {
+      "evidence": {
+        "CR": [
+          "I’ve watched talented, bright friends lose confidence and feel detached from real life."
+        ],
+        "EV": [
+          "exposure to idealized lifestyles leads to anxiety, imposter syndrome, and loneliness."
+        ],
+        "IJ": [
+          "creating a community initiative called \"Unplug & Create\"—a monthly, offline creative workshop"
+        ],
+        "CV": [
+          "As someone immersed in visual media all day, I see how constant exposure"
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "She grounds her reasoning in directly observing her peers lose confidence and disconnect due to curated social media culture."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She articulates how exposure to idealized media results in imposter syndrome, anxiety, and feeling detached from real life."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Realistic step within her means that fits the problem, or has already acted",
+            "status": "supported",
+            "explanation": "Starting a monthly, phone-free local creative workshop is a realistic, accessible first step that fits the problem."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Owns a clear stance",
+            "status": "supported",
+            "explanation": "She takes a firm stance against the pressures of hyper-curated social media culture."
+          },
+          {
+            "descriptor_element": "answers rooted in specific personal detail",
+            "status": "supported",
+            "explanation": "She roots her perspective in being immersed in visual media all day and watching her close friends suffer from burnout."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The candidate presents a clear point with reasons grounded directly in her personal observations of friends and peers.",
+        "EV": "The candidate clearly demonstrates how and why curated online culture impacts the mental well-being and confidence of young women.",
+        "IJ": "A monthly offline art gathering is a realistic, feasible initiative within the candidate's personal reach that addresses digital burnout.",
+        "CV": "The candidate takes ownership of her viewpoint and supports it with specific details about her media immersion and close circle. Consistency across answers was not checked."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The answer does not consider counter-arguments, alternate perspectives, or trade-offs involved in unplugging or social media use."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "The answer treats the issue uniformly without recognising differing circumstances or respecting choices different from her own."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "how she’d know it worked"
+          ],
+          "explanation": "While she proposes a realistic step, she does not describe any metrics or indications of how she would know the initiative succeeded."
+        },
+        "CV": {
+          "next_anchor_level": 8,
+          "descriptor": "Consistent conviction across answers, distinctly her own, persuasive",
+          "missing_elements": [
+            "distinctly her own, persuasive"
+          ],
+          "explanation": "While personal, the framing and ideas follow familiar digital detox tropes rather than presenting a voice that is distinctly her own."
+        }
+      },
+      "levels": {
+        "CR": 6,
+        "EV": 6,
+        "IJ": 6,
+        "CV": 6
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 6.0,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"I’ve watched talented, bright friends lose confidence and feel detached from real life.\"\n    ],\n    \"EV\": [\n      \"exposure to idealized lifestyles leads to anxiety, imposter syndrome, and loneliness.\"\n    ],\n    \"IJ\": [\n      \"creating a community initiative called \\\"Unplug & Create\\\"—a monthly, offline creative workshop\"\n    ],\n    \"CV\": [\n      \"As someone immersed in visual media all day, I see how constant exposure\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She grounds her reasoning in directly observing her peers lose confidence and disconnect due to curated social media culture.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She articulates how exposure to idealized media results in imposter syndrome, anxiety, and feeling detached from real life.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Realistic step within her means that fits the problem, or has already acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"Starting a monthly, phone-free local creative workshop is a realistic, accessible first step that fits the problem.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Owns a clear stance\",\n        \"status\": \"supported\",\n        \"explanation\": \"She takes a firm stance against the pressures of hyper-curated social media culture.\"\n      },\n      {\n        \"descriptor_element\": \"answers rooted in specific personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She roots her perspective in being immersed in visual media all day and watching her close friends suffer from burnout.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The candidate presents a clear point with reasons grounded directly in her personal observations of friends and peers.\",\n    \"EV\": \"The candidate clearly demonstrates how and why curated online culture impacts the mental well-being and confidence of young women.\",\n    \"IJ\": \"A monthly offline art gathering is a realistic, feasible initiative within the candidate's personal reach that addresses digital burnout.\",\n    \"CV\": \"The candidate takes ownership of her viewpoint and supports it with specific details about her media immersion and close circle. Consistency across answers was not checked.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The answer does not consider counter-arguments, alternate perspectives, or trade-offs involved in unplugging or social media use.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"The answer treats the issue uniformly without recognising differing circumstances or respecting choices different from her own.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"how she’d know it worked\"\n      ],\n      \"explanation\": \"While she proposes a realistic step, she does not describe any metrics or indications of how she would know the initiative succeeded.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Consistent conviction across answers, distinctly her own, persuasive\",\n      \"missing_elements\": [\n        \"distinctly her own, persuasive\"\n      ],\n      \"explanation\": \"While personal, the framing and ideas follow familiar digital detox tropes rather than presenting a voice that is distinctly her own.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 6,\n    \"CV\": 6\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "52c02f6cc17354ea2067945e4d466a9ebaf4ffc968403dbab0d43f0eab31fb11",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "52c02f6cc17354ea2067945e4d466a9ebaf4ffc968403dbab0d43f0eab31fb11",
+      "answer_sha256": "178aab1a1ed3d3e25cbf421351194d7f5f23b9157e5181c4e0de7a58c0d72d5d"
+    },
+    "Q5": {
+      "evidence": {
+        "SA": [
+          "difficulty with saying \"no\" and establishing clear boundaries around my time and energy"
+        ],
+        "IJ": [
+          "To improve this, I have implemented a structured self-management system.",
+          "allowed me to bring much higher energy, focus, and quality"
+        ],
+        "CV": [
+          "practice taking a 24-hour pause before responding instead of giving an immediate \"yes.\""
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Names a real choice, motivation or limitation of her own",
+            "status": "supported",
+            "explanation": "She explicitly identifies her limitation as having difficulty saying 'no' and setting boundaries due to overcommitting."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Has acted and reflected on the result",
+            "status": "supported",
+            "explanation": "She has implemented concrete tactics (a 24-hour pause and visual calendar) and reflects that this allows her to bring higher energy, focus, and quality to her commitments."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal",
+            "status": "supported",
+            "explanation": "She defines a clear goal of establishing boundaries around her time and energy."
+          },
+          {
+            "descriptor_element": "at least one personal detail",
+            "status": "supported",
+            "explanation": "She includes personal details of her routine, such as taking a 24-hour pause before responding to requests."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate clearly names her personal limitation and the motivation behind it (loving to help others), meeting level 4.",
+        "IJ": "The candidate demonstrates that she has already taken concrete actions within her control and clearly reflects on the positive results of those actions, satisfying level 8.",
+        "CV": "She takes a clear stance on boundary-setting and includes personal details regarding her coping strategies, meeting the requirements for level 4."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 6,
+          "descriptor": "Explains what she learned, with a concrete example",
+          "missing_elements": [
+            "with a concrete example"
+          ],
+          "explanation": "While she explains what she learned about boundary-setting, she does not provide a concrete example of an incident or situation where this learning occurred."
+        },
+        "IJ": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "Level 8 is the highest defined level on the rubric."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "The answer provides general self-management habits but lacks deeper rooting in specific personal details of her life, speaking broadly of 'work' and 'projects'."
+        }
+      },
+      "levels": {
+        "SA": 4,
+        "IJ": 8,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "IJ": [
+          true,
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 4.8,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"difficulty with saying \\\"no\\\" and establishing clear boundaries around my time and energy\"\n    ],\n    \"IJ\": [\n      \"To improve this, I have implemented a structured self-management system.\",\n      \"allowed me to bring much higher energy, focus, and quality\"\n    ],\n    \"CV\": [\n      \"practice taking a 24-hour pause before responding instead of giving an immediate \\\"yes.\\\"\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Names a real choice, motivation or limitation of her own\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explicitly identifies her limitation as having difficulty saying 'no' and setting boundaries due to overcommitting.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Has acted and reflected on the result\",\n        \"status\": \"supported\",\n        \"explanation\": \"She has implemented concrete tactics (a 24-hour pause and visual calendar) and reflects that this allows her to bring higher energy, focus, and quality to her commitments.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal\",\n        \"status\": \"supported\",\n        \"explanation\": \"She defines a clear goal of establishing boundaries around her time and energy.\"\n      },\n      {\n        \"descriptor_element\": \"at least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She includes personal details of her routine, such as taking a 24-hour pause before responding to requests.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate clearly names her personal limitation and the motivation behind it (loving to help others), meeting level 4.\",\n    \"IJ\": \"The candidate demonstrates that she has already taken concrete actions within her control and clearly reflects on the positive results of those actions, satisfying level 8.\",\n    \"CV\": \"She takes a clear stance on boundary-setting and includes personal details regarding her coping strategies, meeting the requirements for level 4.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Explains what she learned, with a concrete example\",\n      \"missing_elements\": [\n        \"with a concrete example\"\n      ],\n      \"explanation\": \"While she explains what she learned about boundary-setting, she does not provide a concrete example of an incident or situation where this learning occurred.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"Level 8 is the highest defined level on the rubric.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"The answer provides general self-management habits but lacks deeper rooting in specific personal details of her life, speaking broadly of 'work' and 'projects'.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 4,\n    \"IJ\": 8,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "53ea6fdc01d0f8f70073c1fdbe4e7a50bebd08f600aa1b5bf8b8fdd2021a4659",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "53ea6fdc01d0f8f70073c1fdbe4e7a50bebd08f600aa1b5bf8b8fdd2021a4659",
+      "answer_sha256": "4599cfde3b297401842f75605e4671017df4cb06b85c376aae5d18b77103f418"
+    }
+  },
+  "unable_to_evaluate_count": 0,
+  "total_is_partial": false,
+  "written_total": 30.5,
+  "written_total_out_of": 40
+}

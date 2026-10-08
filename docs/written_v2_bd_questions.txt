@@ -1,0 +1,32 @@
+Written screening v2: open questions for BD (no criteria changed)
+
+1. CV 8 / EV 8: Must every written descriptor element be evidenced, or is an
+overall judgment sufficient? How should absent elements affect the level?
+CV cases: C001/Q2/CV, C003/Q1/CV, C004/Q3/CV.
+EV cases: C001/Q3/EV, C003/Q4/EV, C004/Q3/EV.
+These gaps matter numerically: Q3 EV weighs 40%; Q5 CV weighs 30%.
+
+2. "Consistent across answers" in SA 8 and CV 8: When judging one answer,
+should it be ignored, receive partial credit, or require a separate step?
+Current prompt says assess the rest and disclose that consistency was not
+checked. Cases: C003/Q1/SA, C003/Q1/CV, C004/Q2/SA.
+
+3. Does "concrete example" require one discrete event, or can described
+ongoing practice and observed progress satisfy it? Cases: C001/Q5/SA,
+C002/Q2/SA, C003/Q1/SA. Does SA 8 need a later example of changed behavior?
+
+4. What makes a "realistic step" sufficiently concrete? Can a conversation
+or encouragement count without an event plan? Cases: C002/Q3/IJ,
+C002/Q4/IJ, C003/Q4/IJ. For IJ 8, must a proposed step explicitly say how
+success will be assessed, rather than feasibility alone?
+
+5. What counts as "specific personal detail" beyond a personal profession,
+goal or belief? Cases: C002/Q1/CV, C002/Q3/CV, C002/Q5/CV.
+
+6. How does "distinctly her own" differ from a clear, personally grounded
+stance? What evidence makes it "persuasive"? Cases: C001/Q1/CV,
+C003/Q2/CV, C004/Q5/CV. An in-depth life story is not a written requirement.
+
+7. What published brand-values/safety rules and review procedure apply to
+BRAND_VALUES_REVIEW and HARMFUL_CONTENT? No automatic penalty or pass/fail
+threshold is added in v2.

@@ -1,0 +1,712 @@
+{
+  "evaluation_version": "written_v2",
+  "candidate_id": "C003",
+  "run": 3,
+  "model": "gemini-3.8-flash",
+  "temperature": 0,
+  "generation_config": {
+    "temperature": 0,
+    "response_mime_type": "application/json"
+  },
+  "prompt_file": "prompts/score_written_v2.txt",
+  "prompt_sha256": "4c7f7416799941c99419eba98261c50d904c419419efac752525b9bb8f8fcbb1",
+  "rubric_file": "config/rubric_written_v1.0.yaml",
+  "rubric_version": "v1.0",
+  "rubric_version_source": "frozen source filename; YAML has no version field",
+  "rubric_sha256": "b77330e38130d1c3b576888159ed4c89479114404bff65506c64e5f8896c9610",
+  "run_date": "2026-10-07T18:02:25.774338+05:30",
+  "questions": {
+    "Q1": {
+      "evidence": {
+        "SA": [
+          "I learned two things.",
+          "a small fix that people actually use is better than a big idea"
+        ],
+        "CR": [
+          "Each one was fixed quickly, but nobody looked at why it kept happening."
+        ],
+        "EV": [
+          "It was costing the team hours every week."
+        ],
+        "IJ": [
+          "We tried it for a month, and [the errors dropped by about half]."
+        ],
+        "CV": [
+          "First, you don't need a title to fix a problem."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Explains what she learned",
+            "status": "supported",
+            "explanation": "She outlines two explicit lessons about taking initiative without a title and focusing on small, usable fixes."
+          },
+          {
+            "descriptor_element": "with a concrete example",
+            "status": "supported",
+            "explanation": "Her learning is directly linked to her initiative of tracking data entry errors and creating a checklist."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "She supports her action by noting her direct observation that recurring data entry errors wasted team time."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She demonstrates how the recurring errors affected the team by costing them hours every week."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Has acted",
+            "status": "supported",
+            "explanation": "She tracked the errors, created a checklist, and implemented it with her manager."
+          },
+          {
+            "descriptor_element": "reflected on the result",
+            "status": "supported",
+            "explanation": "She evaluated the outcome over a month, noting that errors dropped by half, and reflected on what worked."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Owns a clear stance",
+            "status": "supported",
+            "explanation": "She asserts a strong point of view that anyone can fix problems by doing the boring work."
+          },
+          {
+            "descriptor_element": "answers rooted in specific personal detail",
+            "status": "supported",
+            "explanation": "Her stance is rooted in her specific operations job experience tracking process errors."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate reflects clearly on what she learned about problem-solving through the specific example of her operations checklist.",
+        "CR": "The candidate establishes a clear point and provides logical reasoning grounded entirely in her direct workplace observations.",
+        "EV": "The candidate identifies the team as the affected group and explains the direct negative effect on them (losing hours each week).",
+        "IJ": "The candidate took concrete action by creating and testing a checklist, and directly assessed and reflected on the resulting impact.",
+        "CV": "The candidate speaks in a genuine personal voice, conveying clear convictions grounded in specific workplace facts."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 8,
+          "descriptor": "Specific reflection showing how an experience changed what she does; consistent across answers",
+          "missing_elements": [
+            "showing how an experience changed what she does"
+          ],
+          "explanation": "The candidate reflects on principles learned, but does not describe how this experience altered her subsequent practices or future actions."
+        },
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The response presents a straightforward chain of logic but does not consider competing viewpoints or analyze explicit trade-offs."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices"
+          ],
+          "explanation": "The candidate notes the burden on the team, but does not explore differing individual circumstances or perspectives among colleagues."
+        },
+        "IJ": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "The candidate has achieved level 8; no higher level exists."
+        },
+        "CV": {
+          "next_anchor_level": 8,
+          "descriptor": "Consistent conviction across answers, distinctly her own, persuasive",
+          "missing_elements": [
+            "distinctly her own, persuasive"
+          ],
+          "explanation": "While personal and clear, the tone relies on familiar workplace takeaways rather than an exceptionally distinctive, deeply persuasive voice; consistency across answers was not assessable."
+        }
+      },
+      "levels": {
+        "SA": 6,
+        "CR": 6,
+        "EV": 6,
+        "IJ": 8,
+        "CV": 6
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true,
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 6.8,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"I learned two things.\",\n      \"a small fix that people actually use is better than a big idea\"\n    ],\n    \"CR\": [\n      \"Each one was fixed quickly, but nobody looked at why it kept happening.\"\n    ],\n    \"EV\": [\n      \"It was costing the team hours every week.\"\n    ],\n    \"IJ\": [\n      \"We tried it for a month, and [the errors dropped by about half].\"\n    ],\n    \"CV\": [\n      \"First, you don't need a title to fix a problem.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Explains what she learned\",\n        \"status\": \"supported\",\n        \"explanation\": \"She outlines two explicit lessons about taking initiative without a title and focusing on small, usable fixes.\"\n      },\n      {\n        \"descriptor_element\": \"with a concrete example\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her learning is directly linked to her initiative of tracking data entry errors and creating a checklist.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She supports her action by noting her direct observation that recurring data entry errors wasted team time.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She demonstrates how the recurring errors affected the team by costing them hours every week.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Has acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"She tracked the errors, created a checklist, and implemented it with her manager.\"\n      },\n      {\n        \"descriptor_element\": \"reflected on the result\",\n        \"status\": \"supported\",\n        \"explanation\": \"She evaluated the outcome over a month, noting that errors dropped by half, and reflected on what worked.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Owns a clear stance\",\n        \"status\": \"supported\",\n        \"explanation\": \"She asserts a strong point of view that anyone can fix problems by doing the boring work.\"\n      },\n      {\n        \"descriptor_element\": \"answers rooted in specific personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her stance is rooted in her specific operations job experience tracking process errors.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate reflects clearly on what she learned about problem-solving through the specific example of her operations checklist.\",\n    \"CR\": \"The candidate establishes a clear point and provides logical reasoning grounded entirely in her direct workplace observations.\",\n    \"EV\": \"The candidate identifies the team as the affected group and explains the direct negative effect on them (losing hours each week).\",\n    \"IJ\": \"The candidate took concrete action by creating and testing a checklist, and directly assessed and reflected on the resulting impact.\",\n    \"CV\": \"The candidate speaks in a genuine personal voice, conveying clear convictions grounded in specific workplace facts.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Specific reflection showing how an experience changed what she does; consistent across answers\",\n      \"missing_elements\": [\n        \"showing how an experience changed what she does\"\n      ],\n      \"explanation\": \"The candidate reflects on principles learned, but does not describe how this experience altered her subsequent practices or future actions.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The response presents a straightforward chain of logic but does not consider competing viewpoints or analyze explicit trade-offs.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\"\n      ],\n      \"explanation\": \"The candidate notes the burden on the team, but does not explore differing individual circumstances or perspectives among colleagues.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"The candidate has achieved level 8; no higher level exists.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Consistent conviction across answers, distinctly her own, persuasive\",\n      \"missing_elements\": [\n        \"distinctly her own, persuasive\"\n      ],\n      \"explanation\": \"While personal and clear, the tone relies on familiar workplace takeaways rather than an exceptionally distinctive, deeply persuasive voice; consistency across answers was not assessable.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 6,\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 8,\n    \"CV\": 6\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "514adcda51eea2f9b9ec3e3453d22e48fa2962682a96615bbf8c847986bcefbd",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "514adcda51eea2f9b9ec3e3453d22e48fa2962682a96615bbf8c847986bcefbd",
+      "answer_sha256": "c7e0e7d457285001c740c8ef753fff19b105432feb5f3d0d09fcddc31fb4df33"
+    },
+    "Q2": {
+      "evidence": {
+        "SA": [
+          "Before that day, I thought disagreeing meant being difficult."
+        ],
+        "CR": [
+          "If this goes wrong, fixing it will take longer than the check would have."
+        ],
+        "EV": [
+          "Everyone was tired, and most people agreed. I did not.",
+          "caught a mistake that would have reached the client."
+        ],
+        "CV": [
+          "I was nervous, since I was one of the newer people. But I said calmly"
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Explains what she learned",
+            "status": "supported",
+            "explanation": "She explains that she realized disagreeing does not mean being difficult, but depends on how you present your reasons."
+          },
+          {
+            "descriptor_element": "with a concrete example",
+            "status": "supported",
+            "explanation": "She grounds this lesson in a concrete incident where she spoke up about a verification step before a deadline."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Considers another view or trade-off",
+            "status": "supported",
+            "explanation": "She considers the team's desire to save time when tired against the risk of errors, proposing a quick check as a trade-off."
+          },
+          {
+            "descriptor_element": "clear logic throughout",
+            "status": "supported",
+            "explanation": "Her reasoning that fixing mistakes later takes longer than checking them now is logical and coherent throughout."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She shows how fatigue affected the team and how skipping the check would affect them through future rework and deliver an error to the client."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Owns a clear stance",
+            "status": "supported",
+            "explanation": "She takes a firm stance against skipping the verification step despite being in the minority."
+          },
+          {
+            "descriptor_element": "answers rooted in specific personal detail",
+            "status": "supported",
+            "explanation": "She roots her response in personal details about being newer to the team and feeling nervous."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate clearly explains the lesson she learned about handling disagreement and anchors it in a concrete workplace example.",
+        "CR": "The candidate clearly weighs the trade-off between speed and accuracy under pressure, sustaining sound and clear logic throughout.",
+        "EV": "The candidate identifies both her team and the client, explaining the impact that skipping the check would have on them.",
+        "CV": "The candidate owns her stance directly, providing specific personal context about being a newer team member who felt nervous."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 8,
+          "descriptor": "Specific reflection showing how an experience changed what she does; consistent across answers",
+          "missing_elements": [
+            "showing how an experience changed what she does",
+            "consistent across answers"
+          ],
+          "explanation": "The candidate reflects on a change in mindset, but does not detail how the experience specifically changed what she does in subsequent situations. Consistency across answers was not checked."
+        },
+        "CR": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "No higher level exists."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "respects others’ choices"
+          ],
+          "explanation": "While she considers consequences and notes the team's fatigue, she seeks to persuade them to change their plan rather than demonstrating respect for their differing choice."
+        },
+        "CV": {
+          "next_anchor_level": 8,
+          "descriptor": "Consistent conviction across answers, distinctly her own, persuasive",
+          "missing_elements": [
+            "consistent conviction across answers",
+            "distinctly her own, persuasive"
+          ],
+          "explanation": "Consistency across answers was not checked. While sincere, the voice remains a standard professional reflection rather than distinctly her own."
+        }
+      },
+      "levels": {
+        "SA": 6,
+        "CR": 8,
+        "EV": 6,
+        "CV": 6
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [
+          true,
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 6.9,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"Before that day, I thought disagreeing meant being difficult.\"\n    ],\n    \"CR\": [\n      \"If this goes wrong, fixing it will take longer than the check would have.\"\n    ],\n    \"EV\": [\n      \"Everyone was tired, and most people agreed. I did not.\",\n      \"caught a mistake that would have reached the client.\"\n    ],\n    \"CV\": [\n      \"I was nervous, since I was one of the newer people. But I said calmly\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Explains what she learned\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that she realized disagreeing does not mean being difficult, but depends on how you present your reasons.\"\n      },\n      {\n        \"descriptor_element\": \"with a concrete example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She grounds this lesson in a concrete incident where she spoke up about a verification step before a deadline.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Considers another view or trade-off\",\n        \"status\": \"supported\",\n        \"explanation\": \"She considers the team's desire to save time when tired against the risk of errors, proposing a quick check as a trade-off.\"\n      },\n      {\n        \"descriptor_element\": \"clear logic throughout\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her reasoning that fixing mistakes later takes longer than checking them now is logical and coherent throughout.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She shows how fatigue affected the team and how skipping the check would affect them through future rework and deliver an error to the client.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Owns a clear stance\",\n        \"status\": \"supported\",\n        \"explanation\": \"She takes a firm stance against skipping the verification step despite being in the minority.\"\n      },\n      {\n        \"descriptor_element\": \"answers rooted in specific personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She roots her response in personal details about being newer to the team and feeling nervous.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate clearly explains the lesson she learned about handling disagreement and anchors it in a concrete workplace example.\",\n    \"CR\": \"The candidate clearly weighs the trade-off between speed and accuracy under pressure, sustaining sound and clear logic throughout.\",\n    \"EV\": \"The candidate identifies both her team and the client, explaining the impact that skipping the check would have on them.\",\n    \"CV\": \"The candidate owns her stance directly, providing specific personal context about being a newer team member who felt nervous.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Specific reflection showing how an experience changed what she does; consistent across answers\",\n      \"missing_elements\": [\n        \"showing how an experience changed what she does\",\n        \"consistent across answers\"\n      ],\n      \"explanation\": \"The candidate reflects on a change in mindset, but does not detail how the experience specifically changed what she does in subsequent situations. Consistency across answers was not checked.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"No higher level exists.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"respects others’ choices\"\n      ],\n      \"explanation\": \"While she considers consequences and notes the team's fatigue, she seeks to persuade them to change their plan rather than demonstrating respect for their differing choice.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Consistent conviction across answers, distinctly her own, persuasive\",\n      \"missing_elements\": [\n        \"consistent conviction across answers\",\n        \"distinctly her own, persuasive\"\n      ],\n      \"explanation\": \"Consistency across answers was not checked. While sincere, the voice remains a standard professional reflection rather than distinctly her own.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 6,\n    \"CR\": 8,\n    \"EV\": 6,\n    \"CV\": 6\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "b2fa3973943b20495b69f99df3889d598cde7daecb80eaa74f980bb1b4ef9614",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "b2fa3973943b20495b69f99df3889d598cde7daecb80eaa74f980bb1b4ef9614",
+      "answer_sha256": "7e9fe36a9f230eefe0924a509c5ea4cbc10df2f3789b2fe82205d4ef349dea3c"
+    },
+    "Q3": {
+      "evidence": {
+        "CR": [
+          "A girl who feels she isn't pretty enough may stop speaking in class"
+        ],
+        "EV": [
+          "That is a real loss of confidence, and it affects her whole life."
+        ],
+        "IJ": [
+          "I would praise girls for their effort, ideas, and kindness, not only their looks."
+        ],
+        "CV": [
+          "And I would be careful about how I speak about my own body"
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "She illustrates the harm with the example of a girl avoiding speaking in class or trying new things."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She describes how feeling inadequate leads to self-doubt, withdrawing from participation, and long-term loss of confidence."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Realistic step within her means that fits the problem",
+            "status": "supported",
+            "explanation": "She proposes attainable everyday actions: shifting praise away from looks and monitoring how she speaks about her own body around younger girls."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal",
+            "status": "supported",
+            "explanation": "She establishes a clear stance against narrow beauty ideals."
+          },
+          {
+            "descriptor_element": "At least one personal detail",
+            "status": "supported",
+            "explanation": "She includes a personal commitment to watch how she talks about her own body around younger girls."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The candidate presents a clear point and supports it with concrete observational examples of how self-doubt manifests in daily school life.",
+        "EV": "The candidate explains how narrow beauty standards affect young girls psychologically and socially, illustrating the impact on their confidence.",
+        "IJ": "The proposed actions—praising effort and watching her own speech around younger girls—are realistic, well-matched steps within her personal means.",
+        "CV": "The candidate owns a clear position and offers a personal touch regarding her own speech habits, though the answer remains largely reflective rather than deeply rooted in personal life details."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The answer maintains a single viewpoint and does not consider opposing perspectives or trade-offs."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices"
+          ],
+          "explanation": "While it considers consequences of low confidence, it does not address differing circumstances or explicitly respect choices different from her own."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "Has acted and reflected on the result",
+            "how she’d know it worked"
+          ],
+          "explanation": "The candidate outlines future steps, but does not state that she has already acted and reflected, nor does she explain how she would evaluate whether the steps worked."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "The answer relies on generalized descriptions of girls' experiences rather than grounding the narrative in specific personal experiences from her own life."
+        }
+      },
+      "levels": {
+        "CR": 6,
+        "EV": 6,
+        "IJ": 6,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 5.6,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"A girl who feels she isn't pretty enough may stop speaking in class\"\n    ],\n    \"EV\": [\n      \"That is a real loss of confidence, and it affects her whole life.\"\n    ],\n    \"IJ\": [\n      \"I would praise girls for their effort, ideas, and kindness, not only their looks.\"\n    ],\n    \"CV\": [\n      \"And I would be careful about how I speak about my own body\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She illustrates the harm with the example of a girl avoiding speaking in class or trying new things.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She describes how feeling inadequate leads to self-doubt, withdrawing from participation, and long-term loss of confidence.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Realistic step within her means that fits the problem\",\n        \"status\": \"supported\",\n        \"explanation\": \"She proposes attainable everyday actions: shifting praise away from looks and monitoring how she speaks about her own body around younger girls.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal\",\n        \"status\": \"supported\",\n        \"explanation\": \"She establishes a clear stance against narrow beauty ideals.\"\n      },\n      {\n        \"descriptor_element\": \"At least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She includes a personal commitment to watch how she talks about her own body around younger girls.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The candidate presents a clear point and supports it with concrete observational examples of how self-doubt manifests in daily school life.\",\n    \"EV\": \"The candidate explains how narrow beauty standards affect young girls psychologically and socially, illustrating the impact on their confidence.\",\n    \"IJ\": \"The proposed actions—praising effort and watching her own speech around younger girls—are realistic, well-matched steps within her personal means.\",\n    \"CV\": \"The candidate owns a clear position and offers a personal touch regarding her own speech habits, though the answer remains largely reflective rather than deeply rooted in personal life details.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The answer maintains a single viewpoint and does not consider opposing perspectives or trade-offs.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\"\n      ],\n      \"explanation\": \"While it considers consequences of low confidence, it does not address differing circumstances or explicitly respect choices different from her own.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"Has acted and reflected on the result\",\n        \"how she’d know it worked\"\n      ],\n      \"explanation\": \"The candidate outlines future steps, but does not state that she has already acted and reflected, nor does she explain how she would evaluate whether the steps worked.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"The answer relies on generalized descriptions of girls' experiences rather than grounding the narrative in specific personal experiences from her own life.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 6,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "0235427d61703b299f10cfe2eba735e40312f7e2bfd50cfe6ff4ff9b8692c7d3",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "0235427d61703b299f10cfe2eba735e40312f7e2bfd50cfe6ff4ff9b8692c7d3",
+      "answer_sha256": "288fcbb9cce4dce1fe283fe1ac9c9dceb3a7736b6c8cdbb6c4860c4a208a104f"
+    },
+    "Q4": {
+      "evidence": {
+        "CR": [
+          "Many women I know manage the whole household budget, but feel unsure about insurance"
+        ],
+        "EV": [
+          "Nobody ever taught them the basics, so they depend on others for these decisions"
+        ],
+        "IJ": [
+          "I would hold a free monthly session for about ten women in my community."
+        ],
+        "CV": [
+          "I studied banking, financial services, and insurance, so I know how much basic knowledge"
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "The candidate supports her point with observations of women she knows managing budgets yet feeling unsure about finances."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She explains that lacking financial basics forces women to depend on others and leaves them vulnerable to fraudulent schemes."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Realistic step within her means that fits the problem, or has already acted",
+            "status": "supported",
+            "explanation": "Holding a free monthly session for ten women using a room and inviting friends from banking is an achievable, directly relevant first step."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Owns a clear stance",
+            "status": "supported",
+            "explanation": "She takes an unambiguous personal position that financial knowledge provides women agency and security."
+          },
+          {
+            "descriptor_element": "answers rooted in specific personal detail",
+            "status": "supported",
+            "explanation": "She roots her response in her specific academic background in banking, financial services, and insurance."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The response clearly articulates the problem and grounds its reasoning in personal observations of women in her life.",
+        "EV": "The candidate demonstrates understanding of the women affected by showing how financial illiteracy leads to dependence and vulnerability.",
+        "IJ": "The proposed action is highly practical, well-defined, and completely within her personal means and background.",
+        "CV": "The candidate expresses a clear viewpoint rooted in her specific studies in banking and financial services. Consistency across answers was not checked."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The answer presents a straightforward case without exploring counterarguments, differing viewpoints, or potential trade-offs."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices"
+          ],
+          "explanation": "While consequences are considered, the answer does not address differing individual circumstances or explicitly respect choices different from her own."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "how she’d know it worked"
+          ],
+          "explanation": "The candidate outlines a realistic first step but does not describe how she would evaluate its success or know that it worked."
+        },
+        "CV": {
+          "next_anchor_level": 8,
+          "descriptor": "Consistent conviction across answers, distinctly her own, persuasive",
+          "missing_elements": [
+            "distinctly her own"
+          ],
+          "explanation": "While personal details are present, the argument follows standard empowerment concepts rather than presenting a voice that is distinctly her own."
+        }
+      },
+      "levels": {
+        "CR": 6,
+        "EV": 6,
+        "IJ": 6,
+        "CV": 6
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 6.0,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"Many women I know manage the whole household budget, but feel unsure about insurance\"\n    ],\n    \"EV\": [\n      \"Nobody ever taught them the basics, so they depend on others for these decisions\"\n    ],\n    \"IJ\": [\n      \"I would hold a free monthly session for about ten women in my community.\"\n    ],\n    \"CV\": [\n      \"I studied banking, financial services, and insurance, so I know how much basic knowledge\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"The candidate supports her point with observations of women she knows managing budgets yet feeling unsure about finances.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that lacking financial basics forces women to depend on others and leaves them vulnerable to fraudulent schemes.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Realistic step within her means that fits the problem, or has already acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"Holding a free monthly session for ten women using a room and inviting friends from banking is an achievable, directly relevant first step.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Owns a clear stance\",\n        \"status\": \"supported\",\n        \"explanation\": \"She takes an unambiguous personal position that financial knowledge provides women agency and security.\"\n      },\n      {\n        \"descriptor_element\": \"answers rooted in specific personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She roots her response in her specific academic background in banking, financial services, and insurance.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The response clearly articulates the problem and grounds its reasoning in personal observations of women in her life.\",\n    \"EV\": \"The candidate demonstrates understanding of the women affected by showing how financial illiteracy leads to dependence and vulnerability.\",\n    \"IJ\": \"The proposed action is highly practical, well-defined, and completely within her personal means and background.\",\n    \"CV\": \"The candidate expresses a clear viewpoint rooted in her specific studies in banking and financial services. Consistency across answers was not checked.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The answer presents a straightforward case without exploring counterarguments, differing viewpoints, or potential trade-offs.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\"\n      ],\n      \"explanation\": \"While consequences are considered, the answer does not address differing individual circumstances or explicitly respect choices different from her own.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"how she’d know it worked\"\n      ],\n      \"explanation\": \"The candidate outlines a realistic first step but does not describe how she would evaluate its success or know that it worked.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Consistent conviction across answers, distinctly her own, persuasive\",\n      \"missing_elements\": [\n        \"distinctly her own\"\n      ],\n      \"explanation\": \"While personal details are present, the argument follows standard empowerment concepts rather than presenting a voice that is distinctly her own.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 6,\n    \"CV\": 6\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "10dcabb420a09466e09b1b7088e0fba61eb3fbba8a3b6122ad7e85d387a2da7b",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "10dcabb420a09466e09b1b7088e0fba61eb3fbba8a3b6122ad7e85d387a2da7b",
+      "answer_sha256": "cea17f9645aa6fa26db00f5e97f5a12bd6b6243c5324a8fb5cf7040eda471924"
+    },
+    "Q5": {
+      "evidence": {
+        "SA": [
+          "In meetings, I often have a useful thought, but by the time I feel ready",
+          "learned that a clear, honest idea shared on time is worth more"
+        ],
+        "IJ": [
+          "I practise explaining my ideas out loud at home, and sometimes I record myself",
+          "It feels awkward, but it works."
+        ],
+        "CV": [
+          "takes away the pressure to be perfect.",
+          "Some days I speak up easily, and some days I go quiet."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Explains what she learned",
+            "status": "supported",
+            "explanation": "She articulates her learning that a clear, honest idea shared on time outweighs a perfect one shared too late."
+          },
+          {
+            "descriptor_element": "with a concrete example",
+            "status": "supported",
+            "explanation": "She illustrates this with the concrete example of holding back useful thoughts in meetings until the discussion moves on."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Has acted",
+            "status": "supported",
+            "explanation": "She has adopted specific habits such as speaking in the first few minutes, practising aloud, and recording herself."
+          },
+          {
+            "descriptor_element": "reflected on the result",
+            "status": "supported",
+            "explanation": "She reflects on how these actions feel awkward but work, noting that she now speaks up easily on some days while still having quiet days."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "distinctly her own",
+            "status": "supported",
+            "explanation": "Her voice is grounded in specific self-devised tactics and honest self-appraisal rather than stock phrases."
+          },
+          {
+            "descriptor_element": "persuasive",
+            "status": "supported",
+            "explanation": "She presents a convincing and relatable case for overcoming perfectionism through actionable micro-habits."
+          },
+          {
+            "descriptor_element": "Consistent conviction across answers",
+            "status": "not_assessable",
+            "explanation": "Consistency across answers cannot be evaluated from a single response."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate clearly explains what she has learned about perfectionism and timing, providing concrete examples of meeting dynamics.",
+        "IJ": "The candidate has already put practical steps into practice and directly reflects on their outcomes and ongoing progress.",
+        "CV": "The candidate demonstrates strong conviction with a voice distinctly her own and persuasive personal detail; consistency across answers was not checked."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 8,
+          "descriptor": "Specific reflection showing how an experience changed what she does; consistent across answers",
+          "missing_elements": [
+            "Specific reflection showing how an experience changed what she does"
+          ],
+          "explanation": "The candidate reflects on a general recurring pattern across meetings rather than showing how a specific experience served as the catalyst that changed what she does."
+        },
+        "IJ": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "No higher level exists."
+        },
+        "CV": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "No higher level exists."
+        }
+      },
+      "levels": {
+        "SA": 6,
+        "IJ": 8,
+        "CV": 8
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true,
+          true
+        ],
+        "IJ": [
+          true,
+          true
+        ],
+        "CV": [
+          true,
+          true
+        ]
+      },
+      "marks": 7.0,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"In meetings, I often have a useful thought, but by the time I feel ready\",\n      \"learned that a clear, honest idea shared on time is worth more\"\n    ],\n    \"IJ\": [\n      \"I practise explaining my ideas out loud at home, and sometimes I record myself\",\n      \"It feels awkward, but it works.\"\n    ],\n    \"CV\": [\n      \"takes away the pressure to be perfect.\",\n      \"Some days I speak up easily, and some days I go quiet.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Explains what she learned\",\n        \"status\": \"supported\",\n        \"explanation\": \"She articulates her learning that a clear, honest idea shared on time outweighs a perfect one shared too late.\"\n      },\n      {\n        \"descriptor_element\": \"with a concrete example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She illustrates this with the concrete example of holding back useful thoughts in meetings until the discussion moves on.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Has acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"She has adopted specific habits such as speaking in the first few minutes, practising aloud, and recording herself.\"\n      },\n      {\n        \"descriptor_element\": \"reflected on the result\",\n        \"status\": \"supported\",\n        \"explanation\": \"She reflects on how these actions feel awkward but work, noting that she now speaks up easily on some days while still having quiet days.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"distinctly her own\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her voice is grounded in specific self-devised tactics and honest self-appraisal rather than stock phrases.\"\n      },\n      {\n        \"descriptor_element\": \"persuasive\",\n        \"status\": \"supported\",\n        \"explanation\": \"She presents a convincing and relatable case for overcoming perfectionism through actionable micro-habits.\"\n      },\n      {\n        \"descriptor_element\": \"Consistent conviction across answers\",\n        \"status\": \"not_assessable\",\n        \"explanation\": \"Consistency across answers cannot be evaluated from a single response.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate clearly explains what she has learned about perfectionism and timing, providing concrete examples of meeting dynamics.\",\n    \"IJ\": \"The candidate has already put practical steps into practice and directly reflects on their outcomes and ongoing progress.\",\n    \"CV\": \"The candidate demonstrates strong conviction with a voice distinctly her own and persuasive personal detail; consistency across answers was not checked.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Specific reflection showing how an experience changed what she does; consistent across answers\",\n      \"missing_elements\": [\n        \"Specific reflection showing how an experience changed what she does\"\n      ],\n      \"explanation\": \"The candidate reflects on a general recurring pattern across meetings rather than showing how a specific experience served as the catalyst that changed what she does.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"No higher level exists.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"No higher level exists.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 6,\n    \"IJ\": 8,\n    \"CV\": 8\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "ce1a63ac71be1c1495b3c93d288d995af172b111e562c580e10e8a37e8e437a3",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "ce1a63ac71be1c1495b3c93d288d995af172b111e562c580e10e8a37e8e437a3",
+      "answer_sha256": "a8c3b285d96af4aaed0e1395723065cf66e4b65f4dbf5ed8e68d058445e33f7d"
+    }
+  },
+  "unable_to_evaluate_count": 0,
+  "total_is_partial": false,
+  "written_total": 32.3,
+  "written_total_out_of": 40
+}

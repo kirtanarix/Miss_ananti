@@ -1,0 +1,707 @@
+{
+  "evaluation_version": "written_v2",
+  "candidate_id": "C001",
+  "run": 2,
+  "model": "gemini-3.8-flash",
+  "temperature": 0,
+  "generation_config": {
+    "temperature": 0,
+    "response_mime_type": "application/json"
+  },
+  "prompt_file": "prompts/score_written_v2.txt",
+  "prompt_sha256": "d2a87ac9f8d502726f5d7d8122293e9e3b913651616e0adbd28d539d81b973c0",
+  "rubric_file": "config/rubric_written_v1.0.yaml",
+  "rubric_version": "v1.0",
+  "rubric_version_source": "frozen source filename; YAML has no version field",
+  "rubric_sha256": "b77330e38130d1c3b576888159ed4c89479114404bff65506c64e5f8896c9610",
+  "run_date": "2026-10-08T14:15:23.282353+05:30",
+  "questions": {
+    "Q1": {
+      "evidence": {
+        "SA": [
+          "I learned that taking initiative does not always mean leading from the front"
+        ],
+        "CR": [
+          "I noticed that one member rarely shared her ideas because she was nervous"
+        ],
+        "EV": [
+          "rarely shared her ideas because she was nervous about speaking."
+        ],
+        "IJ": [
+          "I suggested that everyone write down their thoughts before our discussions",
+          "Over time, she became more comfortable sharing her views."
+        ],
+        "CV": [
+          "sometimes it means creating space for someone else."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Explains what she learned",
+            "status": "supported",
+            "explanation": "She states that she learned initiative can mean creating space for someone else rather than just leading from the front."
+          },
+          {
+            "descriptor_element": "with a concrete example",
+            "status": "supported",
+            "explanation": "She grounds this lesson in the specific example of accommodating a nervous group project member."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "Her reasoning connects her intervention directly to observing a peer who was nervous about speaking."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She explains why the peer was affected (nervousness prevented her from speaking) and how the intervention helped her become comfortable."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Has acted",
+            "status": "supported",
+            "explanation": "She suggested writing thoughts down before discussion and co-presented a small section with her teammate."
+          },
+          {
+            "descriptor_element": "reflected on the result",
+            "status": "supported",
+            "explanation": "She notes that her peer became more comfortable over time and reflects on what this taught her about leadership."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Owns a clear stance",
+            "status": "supported",
+            "explanation": "She takes a clear, personalized stance on redefining initiative as creating space for others."
+          },
+          {
+            "descriptor_element": "answers rooted in specific personal detail",
+            "status": "supported",
+            "explanation": "Her stance is rooted in the specific context of her group project experience."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate clearly explains what she learned from a concrete project example, meeting all requirements of level 6.",
+        "CR": "The response provides clear reasoning grounded directly in the candidate's personal observation during a group task.",
+        "EV": "The candidate demonstrates clear empathy by explaining why the teammate struggled to speak and how the support helped her.",
+        "IJ": "The candidate carried out concrete, appropriate steps and clearly reflected on both the outcome for her teammate and her own takeaway.",
+        "CV": "The response conveys an authentic personal stance backed by specific details of what she did in the group."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 8,
+          "descriptor": "Specific reflection showing how an experience changed what she does; consistent across answers",
+          "missing_elements": [
+            "showing how an experience changed what she does"
+          ],
+          "explanation": "The candidate reflects on what she learned conceptually, but does not describe how the experience changed her ongoing practices or future actions."
+        },
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The logic is sound, but the candidate does not examine alternative viewpoints or weigh any trade-offs of her approach."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "While she supports her teammate, she does not engage with choices different from her own or evaluate wider consequences."
+        },
+        "IJ": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "No higher level exists."
+        },
+        "CV": {
+          "next_anchor_level": 8,
+          "descriptor": "Consistent conviction across answers, distinctly her own, persuasive",
+          "missing_elements": [
+            "distinctly her own, persuasive"
+          ],
+          "explanation": "Although the position is clear and consistent, the response is brief and standard rather than distinctly individual and deeply persuasive."
+        }
+      },
+      "levels": {
+        "SA": 6,
+        "CR": 6,
+        "EV": 6,
+        "IJ": 8,
+        "CV": 6
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true,
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 6.8,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"I learned that taking initiative does not always mean leading from the front\"\n    ],\n    \"CR\": [\n      \"I noticed that one member rarely shared her ideas because she was nervous\"\n    ],\n    \"EV\": [\n      \"rarely shared her ideas because she was nervous about speaking.\"\n    ],\n    \"IJ\": [\n      \"I suggested that everyone write down their thoughts before our discussions\",\n      \"Over time, she became more comfortable sharing her views.\"\n    ],\n    \"CV\": [\n      \"sometimes it means creating space for someone else.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Explains what she learned\",\n        \"status\": \"supported\",\n        \"explanation\": \"She states that she learned initiative can mean creating space for someone else rather than just leading from the front.\"\n      },\n      {\n        \"descriptor_element\": \"with a concrete example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She grounds this lesson in the specific example of accommodating a nervous group project member.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her reasoning connects her intervention directly to observing a peer who was nervous about speaking.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains why the peer was affected (nervousness prevented her from speaking) and how the intervention helped her become comfortable.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Has acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"She suggested writing thoughts down before discussion and co-presented a small section with her teammate.\"\n      },\n      {\n        \"descriptor_element\": \"reflected on the result\",\n        \"status\": \"supported\",\n        \"explanation\": \"She notes that her peer became more comfortable over time and reflects on what this taught her about leadership.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Owns a clear stance\",\n        \"status\": \"supported\",\n        \"explanation\": \"She takes a clear, personalized stance on redefining initiative as creating space for others.\"\n      },\n      {\n        \"descriptor_element\": \"answers rooted in specific personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her stance is rooted in the specific context of her group project experience.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate clearly explains what she learned from a concrete project example, meeting all requirements of level 6.\",\n    \"CR\": \"The response provides clear reasoning grounded directly in the candidate's personal observation during a group task.\",\n    \"EV\": \"The candidate demonstrates clear empathy by explaining why the teammate struggled to speak and how the support helped her.\",\n    \"IJ\": \"The candidate carried out concrete, appropriate steps and clearly reflected on both the outcome for her teammate and her own takeaway.\",\n    \"CV\": \"The response conveys an authentic personal stance backed by specific details of what she did in the group.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Specific reflection showing how an experience changed what she does; consistent across answers\",\n      \"missing_elements\": [\n        \"showing how an experience changed what she does\"\n      ],\n      \"explanation\": \"The candidate reflects on what she learned conceptually, but does not describe how the experience changed her ongoing practices or future actions.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The logic is sound, but the candidate does not examine alternative viewpoints or weigh any trade-offs of her approach.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"While she supports her teammate, she does not engage with choices different from her own or evaluate wider consequences.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"No higher level exists.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Consistent conviction across answers, distinctly her own, persuasive\",\n      \"missing_elements\": [\n        \"distinctly her own, persuasive\"\n      ],\n      \"explanation\": \"Although the position is clear and consistent, the response is brief and standard rather than distinctly individual and deeply persuasive.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 6,\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 8,\n    \"CV\": 6\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "6652d37e22e6f43c54bae0ee68c12ac7998be0f3314ac0b68605d601283871bc",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "6652d37e22e6f43c54bae0ee68c12ac7998be0f3314ac0b68605d601283871bc",
+      "answer_sha256": "19f06d5ba3dd73cbf6e35e6b423659eb7adac98075f58aa438fc9b3601a324ab"
+    },
+    "Q2": {
+      "evidence": {
+        "SA": [
+          "The conversation taught me that I can stand by my values while remaining respectful"
+        ],
+        "CR": [
+          "judging someone by appearance can limit their freedom and make them feel ashamed without reason."
+        ],
+        "EV": [
+          "judging someone by appearance can limit their freedom and make them feel ashamed without reason."
+        ],
+        "CV": [
+          "I once disagreed with friends who felt that a girl’s clothing reflected her character."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Explains what she learned",
+            "status": "supported",
+            "explanation": "She explains that the discussion taught her to uphold her values while respecting people with different opinions."
+          },
+          {
+            "descriptor_element": "with a concrete example",
+            "status": "supported",
+            "explanation": "She illustrates this learning through the specific example of a disagreement with friends about clothing and character."
+          }
+        ],
+        "CR": [
+          {
+            "descriptor_element": "Clear point",
+            "status": "supported",
+            "explanation": "She makes the clear point that a girl's clothing does not reflect her character."
+          },
+          {
+            "descriptor_element": "with a relevant reason",
+            "status": "supported",
+            "explanation": "She supports her stance by stating that superficial judgment limits freedom and causes unjustified shame."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She explains that judging girls by their clothing impacts them by restricting their freedom and making them feel ashamed without cause."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal",
+            "status": "supported",
+            "explanation": "She clearly takes the stance that character is judged by kindness and honesty, not clothing."
+          },
+          {
+            "descriptor_element": "with at least one personal detail",
+            "status": "supported",
+            "explanation": "She includes the personal detail of directly disagreeing with and listening to her friends on this issue."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate explicitly outlines what she learned from the conversation, anchoring her insight in a concrete incident where she disagreed with her peers.",
+        "CR": "The response presents a coherent argument supported by a relevant reason, clearly articulating why judging character based on clothing is flawed.",
+        "EV": "The candidate demonstrates clear empathy by explaining the specific emotional and social harm—loss of freedom and undue shame—experienced by those judged for their clothing.",
+        "CV": "The candidate asserts an unmistakable personal position and grounds it in a real disagreement from her life, meeting the requirements of level 4."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 8,
+          "descriptor": "Specific reflection showing how an experience changed what she does; consistent across answers",
+          "missing_elements": [
+            "showing how an experience changed what she does"
+          ],
+          "explanation": "While her reflection is internally consistent and identifies a clear lesson, she does not describe how this experience changed her subsequent behavior or actions."
+        },
+        "CR": {
+          "next_anchor_level": 6,
+          "descriptor": "Reason grounded in her own observation or example",
+          "missing_elements": [
+            "Reason grounded in her own observation or example"
+          ],
+          "explanation": "The reason she gives is a sound general principle, but it is not grounded in a concrete observation or specific real-life example of someone being judged."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "Although she shows how judgment harms individuals and mentions listening respectfully, she does not analyze differing circumstances or the broader consequences of diverse choices."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "The candidate owns her stance, but the response provides only a brief mention of a peer discussion rather than being deeply rooted in specific personal details of the interaction."
+        }
+      },
+      "levels": {
+        "SA": 6,
+        "CR": 4,
+        "EV": 6,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 4.7,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"The conversation taught me that I can stand by my values while remaining respectful\"\n    ],\n    \"CR\": [\n      \"judging someone by appearance can limit their freedom and make them feel ashamed without reason.\"\n    ],\n    \"EV\": [\n      \"judging someone by appearance can limit their freedom and make them feel ashamed without reason.\"\n    ],\n    \"CV\": [\n      \"I once disagreed with friends who felt that a girl’s clothing reflected her character.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Explains what she learned\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that the discussion taught her to uphold her values while respecting people with different opinions.\"\n      },\n      {\n        \"descriptor_element\": \"with a concrete example\",\n        \"status\": \"supported\",\n        \"explanation\": \"She illustrates this learning through the specific example of a disagreement with friends about clothing and character.\"\n      }\n    ],\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Clear point\",\n        \"status\": \"supported\",\n        \"explanation\": \"She makes the clear point that a girl's clothing does not reflect her character.\"\n      },\n      {\n        \"descriptor_element\": \"with a relevant reason\",\n        \"status\": \"supported\",\n        \"explanation\": \"She supports her stance by stating that superficial judgment limits freedom and causes unjustified shame.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that judging girls by their clothing impacts them by restricting their freedom and making them feel ashamed without cause.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal\",\n        \"status\": \"supported\",\n        \"explanation\": \"She clearly takes the stance that character is judged by kindness and honesty, not clothing.\"\n      },\n      {\n        \"descriptor_element\": \"with at least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She includes the personal detail of directly disagreeing with and listening to her friends on this issue.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate explicitly outlines what she learned from the conversation, anchoring her insight in a concrete incident where she disagreed with her peers.\",\n    \"CR\": \"The response presents a coherent argument supported by a relevant reason, clearly articulating why judging character based on clothing is flawed.\",\n    \"EV\": \"The candidate demonstrates clear empathy by explaining the specific emotional and social harm—loss of freedom and undue shame—experienced by those judged for their clothing.\",\n    \"CV\": \"The candidate asserts an unmistakable personal position and grounds it in a real disagreement from her life, meeting the requirements of level 4.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Specific reflection showing how an experience changed what she does; consistent across answers\",\n      \"missing_elements\": [\n        \"showing how an experience changed what she does\"\n      ],\n      \"explanation\": \"While her reflection is internally consistent and identifies a clear lesson, she does not describe how this experience changed her subsequent behavior or actions.\"\n    },\n    \"CR\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Reason grounded in her own observation or example\",\n      \"missing_elements\": [\n        \"Reason grounded in her own observation or example\"\n      ],\n      \"explanation\": \"The reason she gives is a sound general principle, but it is not grounded in a concrete observation or specific real-life example of someone being judged.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"Although she shows how judgment harms individuals and mentions listening respectfully, she does not analyze differing circumstances or the broader consequences of diverse choices.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"The candidate owns her stance, but the response provides only a brief mention of a peer discussion rather than being deeply rooted in specific personal details of the interaction.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 6,\n    \"CR\": 4,\n    \"EV\": 6,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "80dd7208e25a44dc9ff1f3542bc7c98e31f1cd70dd7493df7f874c6d5f596c63",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "80dd7208e25a44dc9ff1f3542bc7c98e31f1cd70dd7493df7f874c6d5f596c63",
+      "answer_sha256": "abc44a439227792869b2fb421ac92ebd7338c1de542882845347ba6db256a928"
+    },
+    "Q3": {
+      "evidence": {
+        "CR": [
+          "fair skin makes them more beautiful or more worthy.",
+          "Comments about skin colour can affect a girl’s confidence"
+        ],
+        "EV": [
+          "Comments about skin colour can affect a girl’s confidence",
+          "feeling that their natural skin colour needs to be corrected."
+        ],
+        "IJ": [
+          "questioning such comments, celebrating different skin tones, and avoiding language"
+        ],
+        "CV": [
+          "fair skin makes them more beautiful or more worthy.",
+          "celebrating different skin tones, and avoiding language that treats fairness as an achievement."
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Clear point",
+            "status": "supported",
+            "explanation": "She clearly states that girls should not believe fair skin makes them more beautiful or worthy."
+          },
+          {
+            "descriptor_element": "relevant reason",
+            "status": "supported",
+            "explanation": "She explains that skin-colour comments harm girls' confidence before they can understand them."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She shows that skin-colour comments damage confidence and make girls feel their natural appearance needs correction."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Realistic step within her means that fits the problem",
+            "status": "supported",
+            "explanation": "Questioning hurtful remarks and avoiding language that praises fairness are realistic, immediate interpersonal actions."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Slogans or stock phrases that could be anyone’s",
+            "status": "supported",
+            "explanation": "The statements reflect common public discourse on colourism without any unique framing or personal specificity."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The candidate presents a clear stance against colourism and provides a sound reason explaining its negative psychological effect, satisfying level 4.",
+        "EV": "The candidate identifies young girls as the affected group and explains how colourist comments negatively impact their self-worth, satisfying level 6.",
+        "IJ": "The suggested actions—challenging comments, celebrating skin tones, and monitoring language—are practical everyday steps directly suited to the issue, earning level 6.",
+        "CV": "The response expresses a clear stance, but relies entirely on generalized stock phrases that could be said by anyone, lacking any personal details."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 6,
+          "descriptor": "Reason grounded in her own observation or example",
+          "missing_elements": [
+            "grounded in her own observation or example"
+          ],
+          "explanation": "The reason is stated as a broad generalization rather than drawing on a specific personal observation or real-life example."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices",
+            "considers consequences"
+          ],
+          "explanation": "The response does not consider differing perspectives, complex social circumstances, or broader consequences beyond the initial effect on confidence."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "Has acted and reflected on the result",
+            "how she’d know it worked"
+          ],
+          "explanation": "The candidate does not state that she has already taken these actions, nor does she explain how she would evaluate whether the steps succeeded."
+        },
+        "CV": {
+          "next_anchor_level": 4,
+          "descriptor": "Clear position or goal with at least one personal detail",
+          "missing_elements": [
+            "at least one personal detail"
+          ],
+          "explanation": "Although she takes a clear stance, the response contains no personal details from her own life or specific context."
+        }
+      },
+      "levels": {
+        "CR": 4,
+        "EV": 6,
+        "IJ": 6,
+        "CV": 2
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true,
+          true
+        ],
+        "EV": [
+          true,
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true,
+          true
+        ]
+      },
+      "marks": 4.7,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"fair skin makes them more beautiful or more worthy.\",\n      \"Comments about skin colour can affect a girl’s confidence\"\n    ],\n    \"EV\": [\n      \"Comments about skin colour can affect a girl’s confidence\",\n      \"feeling that their natural skin colour needs to be corrected.\"\n    ],\n    \"IJ\": [\n      \"questioning such comments, celebrating different skin tones, and avoiding language\"\n    ],\n    \"CV\": [\n      \"fair skin makes them more beautiful or more worthy.\",\n      \"celebrating different skin tones, and avoiding language that treats fairness as an achievement.\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Clear point\",\n        \"status\": \"supported\",\n        \"explanation\": \"She clearly states that girls should not believe fair skin makes them more beautiful or worthy.\"\n      },\n      {\n        \"descriptor_element\": \"relevant reason\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that skin-colour comments harm girls' confidence before they can understand them.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She shows that skin-colour comments damage confidence and make girls feel their natural appearance needs correction.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Realistic step within her means that fits the problem\",\n        \"status\": \"supported\",\n        \"explanation\": \"Questioning hurtful remarks and avoiding language that praises fairness are realistic, immediate interpersonal actions.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Slogans or stock phrases that could be anyone’s\",\n        \"status\": \"supported\",\n        \"explanation\": \"The statements reflect common public discourse on colourism without any unique framing or personal specificity.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The candidate presents a clear stance against colourism and provides a sound reason explaining its negative psychological effect, satisfying level 4.\",\n    \"EV\": \"The candidate identifies young girls as the affected group and explains how colourist comments negatively impact their self-worth, satisfying level 6.\",\n    \"IJ\": \"The suggested actions—challenging comments, celebrating skin tones, and monitoring language—are practical everyday steps directly suited to the issue, earning level 6.\",\n    \"CV\": \"The response expresses a clear stance, but relies entirely on generalized stock phrases that could be said by anyone, lacking any personal details.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Reason grounded in her own observation or example\",\n      \"missing_elements\": [\n        \"grounded in her own observation or example\"\n      ],\n      \"explanation\": \"The reason is stated as a broad generalization rather than drawing on a specific personal observation or real-life example.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\",\n        \"considers consequences\"\n      ],\n      \"explanation\": \"The response does not consider differing perspectives, complex social circumstances, or broader consequences beyond the initial effect on confidence.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"Has acted and reflected on the result\",\n        \"how she’d know it worked\"\n      ],\n      \"explanation\": \"The candidate does not state that she has already taken these actions, nor does she explain how she would evaluate whether the steps succeeded.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 4,\n      \"descriptor\": \"Clear position or goal with at least one personal detail\",\n      \"missing_elements\": [\n        \"at least one personal detail\"\n      ],\n      \"explanation\": \"Although she takes a clear stance, the response contains no personal details from her own life or specific context.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 4,\n    \"EV\": 6,\n    \"IJ\": 6,\n    \"CV\": 2\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "2955538aa3581de607437922879f1747fc6df484da8f7c42a8d1a88c4f30bed9",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "2955538aa3581de607437922879f1747fc6df484da8f7c42a8d1a88c4f30bed9",
+      "answer_sha256": "560d09dd6b23324f0a3e3d6562ec09efa7dacee602faa3d68a924d0403786510"
+    },
+    "Q4": {
+      "evidence": {
+        "CR": [
+          "some girls around me hesitate to ask questions about periods because they fear embarrassment"
+        ],
+        "EV": [
+          "silence can leave them confused and make a normal part of life feel shameful."
+        ],
+        "IJ": [
+          "speak with a teacher or a qualified health professional about organising a small session"
+        ],
+        "CV": [
+          "This matters to me because silence can leave them confused"
+        ]
+      },
+      "element_checks": {
+        "CR": [
+          {
+            "descriptor_element": "Reason grounded in her own observation or example",
+            "status": "supported",
+            "explanation": "Her reasoning about why period stigma matters is grounded in her personal observation of girls around her hesitating to ask questions."
+          }
+        ],
+        "EV": [
+          {
+            "descriptor_element": "Shows why or how it affects them",
+            "status": "supported",
+            "explanation": "She explains that the silence affects girls by leaving them confused and making a normal process feel shameful."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Realistic step within her means that fits the problem, or has already acted",
+            "status": "supported",
+            "explanation": "Speaking to a teacher or health professional to set up an anonymous question session is a realistic, accessible step that directly addresses embarrassment."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal",
+            "status": "supported",
+            "explanation": "She expresses a clear stance that menstruation should not be treated with silence and shame."
+          },
+          {
+            "descriptor_element": "at least one personal detail",
+            "status": "supported",
+            "explanation": "She provides the personal detail of noticing peers around her feeling embarrassed to ask about periods."
+          }
+        ]
+      },
+      "reasoning": {
+        "CR": "The candidate presents a logical, coherent point backed by a reason drawn directly from her personal observation of her peers.",
+        "EV": "The candidate clearly demonstrates empathy by identifying how social silence emotionally and mentally impacts girls.",
+        "IJ": "The proposed initiative to consult an authority figure to arrange an anonymous forum is practical, appropriate to her scale, and directly targets the problem.",
+        "CV": "The candidate takes a clear personal stance and includes an observation from her own surroundings, meeting the requirements for level 4."
+      },
+      "next_level_explanation": {
+        "CR": {
+          "next_anchor_level": 8,
+          "descriptor": "Considers another view or trade-off; clear logic throughout",
+          "missing_elements": [
+            "Considers another view or trade-off"
+          ],
+          "explanation": "The logic is clear throughout, but the response does not examine an alternative viewpoint or any trade-offs involved in her solution."
+        },
+        "EV": {
+          "next_anchor_level": 8,
+          "descriptor": "Recognises differing circumstances, respects others’ choices, considers consequences",
+          "missing_elements": [
+            "Recognises differing circumstances",
+            "respects others’ choices"
+          ],
+          "explanation": "While she considers the consequences of silence, she does not address differing individual circumstances or perspectives."
+        },
+        "IJ": {
+          "next_anchor_level": 8,
+          "descriptor": "Has acted and reflected on the result, or realistic step plus how she’d know it worked",
+          "missing_elements": [
+            "how she’d know it worked"
+          ],
+          "explanation": "She outlines a realistic step, but has not yet carried it out nor indicated how she would evaluate whether the session was successful."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "While she owns her stance, the reference to girls around her is generalized rather than rooted in specific personal details from her life."
+        }
+      },
+      "levels": {
+        "CR": 6,
+        "EV": 6,
+        "IJ": 6,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "CR": [
+          true
+        ],
+        "EV": [
+          true
+        ],
+        "IJ": [
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 5.7,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"CR\": [\n      \"some girls around me hesitate to ask questions about periods because they fear embarrassment\"\n    ],\n    \"EV\": [\n      \"silence can leave them confused and make a normal part of life feel shameful.\"\n    ],\n    \"IJ\": [\n      \"speak with a teacher or a qualified health professional about organising a small session\"\n    ],\n    \"CV\": [\n      \"This matters to me because silence can leave them confused\"\n    ]\n  },\n  \"element_checks\": {\n    \"CR\": [\n      {\n        \"descriptor_element\": \"Reason grounded in her own observation or example\",\n        \"status\": \"supported\",\n        \"explanation\": \"Her reasoning about why period stigma matters is grounded in her personal observation of girls around her hesitating to ask questions.\"\n      }\n    ],\n    \"EV\": [\n      {\n        \"descriptor_element\": \"Shows why or how it affects them\",\n        \"status\": \"supported\",\n        \"explanation\": \"She explains that the silence affects girls by leaving them confused and making a normal process feel shameful.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Realistic step within her means that fits the problem, or has already acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"Speaking to a teacher or health professional to set up an anonymous question session is a realistic, accessible step that directly addresses embarrassment.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal\",\n        \"status\": \"supported\",\n        \"explanation\": \"She expresses a clear stance that menstruation should not be treated with silence and shame.\"\n      },\n      {\n        \"descriptor_element\": \"at least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She provides the personal detail of noticing peers around her feeling embarrassed to ask about periods.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"CR\": \"The candidate presents a logical, coherent point backed by a reason drawn directly from her personal observation of her peers.\",\n    \"EV\": \"The candidate clearly demonstrates empathy by identifying how social silence emotionally and mentally impacts girls.\",\n    \"IJ\": \"The proposed initiative to consult an authority figure to arrange an anonymous forum is practical, appropriate to her scale, and directly targets the problem.\",\n    \"CV\": \"The candidate takes a clear personal stance and includes an observation from her own surroundings, meeting the requirements for level 4.\"\n  },\n  \"next_level_explanation\": {\n    \"CR\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Considers another view or trade-off; clear logic throughout\",\n      \"missing_elements\": [\n        \"Considers another view or trade-off\"\n      ],\n      \"explanation\": \"The logic is clear throughout, but the response does not examine an alternative viewpoint or any trade-offs involved in her solution.\"\n    },\n    \"EV\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Recognises differing circumstances, respects others’ choices, considers consequences\",\n      \"missing_elements\": [\n        \"Recognises differing circumstances\",\n        \"respects others’ choices\"\n      ],\n      \"explanation\": \"While she considers the consequences of silence, she does not address differing individual circumstances or perspectives.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": 8,\n      \"descriptor\": \"Has acted and reflected on the result, or realistic step plus how she’d know it worked\",\n      \"missing_elements\": [\n        \"how she’d know it worked\"\n      ],\n      \"explanation\": \"She outlines a realistic step, but has not yet carried it out nor indicated how she would evaluate whether the session was successful.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"While she owns her stance, the reference to girls around her is generalized rather than rooted in specific personal details from her life.\"\n    }\n  },\n  \"levels\": {\n    \"CR\": 6,\n    \"EV\": 6,\n    \"IJ\": 6,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "a70f778183820e324557479ed38854de23b26c49107435fb3b9f783e06768d5b",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "a70f778183820e324557479ed38854de23b26c49107435fb3b9f783e06768d5b",
+      "answer_sha256": "d222d96dd9994bcaf8af2dedaa620629cf6fcb4b3f530360bac28230d4f0f7cb"
+    },
+    "Q5": {
+      "evidence": {
+        "SA": [
+          "overthink what I want to say because I am afraid of making a mistake."
+        ],
+        "IJ": [
+          "practise speaking aloud, volunteer to contribute in small group discussions",
+          "progress is gradual, but I am becoming more willing to speak"
+        ],
+        "CV": [
+          "learning to focus on expressing my thoughts clearly rather than sounding perfect."
+        ]
+      },
+      "element_checks": {
+        "SA": [
+          {
+            "descriptor_element": "Names a real choice, motivation or limitation of her own",
+            "status": "supported",
+            "explanation": "She identifies her own limitation of overthinking before speaking due to fear of mistakes."
+          }
+        ],
+        "IJ": [
+          {
+            "descriptor_element": "Has acted",
+            "status": "supported",
+            "explanation": "She practices speaking aloud, contributes to small groups, and solicits feedback."
+          },
+          {
+            "descriptor_element": "reflected on the result",
+            "status": "supported",
+            "explanation": "She reflects that her progress is gradual and she is now more willing to speak despite nerves."
+          }
+        ],
+        "CV": [
+          {
+            "descriptor_element": "Clear position or goal",
+            "status": "supported",
+            "explanation": "She clearly aims to speak more confidently by prioritizing clear expression over perfection."
+          },
+          {
+            "descriptor_element": "at least one personal detail",
+            "status": "supported",
+            "explanation": "She includes personal details about her hesitation, fear of mistakes, and practice steps."
+          }
+        ]
+      },
+      "reasoning": {
+        "SA": "The candidate clearly articulates an internal limitation causing her speaking anxiety, satisfying anchor 4.",
+        "IJ": "The candidate outlines concrete actions she already takes and evaluates the outcome of those efforts on her confidence, meeting both parts of anchor 8.",
+        "CV": "The response articulates a clear goal and includes genuine personal details about her habits and mindset, meeting anchor 4."
+      },
+      "next_level_explanation": {
+        "SA": {
+          "next_anchor_level": 6,
+          "descriptor": "Explains what she learned, with a concrete example",
+          "missing_elements": [
+            "concrete example"
+          ],
+          "explanation": "While she mentions what she is learning conceptually, she does not provide a concrete example illustrating a specific instance of learning."
+        },
+        "IJ": {
+          "next_anchor_level": null,
+          "descriptor": null,
+          "missing_elements": [],
+          "explanation": "The response satisfies level 8; no higher level exists."
+        },
+        "CV": {
+          "next_anchor_level": 6,
+          "descriptor": "Owns a clear stance; answers rooted in specific personal detail",
+          "missing_elements": [
+            "answers rooted in specific personal detail"
+          ],
+          "explanation": "The answer provides brief personal details, but the descriptions remain fairly general rather than deeply rooted in specific personal context or life experiences."
+        }
+      },
+      "levels": {
+        "SA": 4,
+        "IJ": 8,
+        "CV": 4
+      },
+      "flags": [],
+      "evidence_verified": {
+        "SA": [
+          true
+        ],
+        "IJ": [
+          true,
+          true
+        ],
+        "CV": [
+          true
+        ]
+      },
+      "marks": 4.8,
+      "status": "valid",
+      "raw_reply": "{\n  \"evidence\": {\n    \"SA\": [\n      \"overthink what I want to say because I am afraid of making a mistake.\"\n    ],\n    \"IJ\": [\n      \"practise speaking aloud, volunteer to contribute in small group discussions\",\n      \"progress is gradual, but I am becoming more willing to speak\"\n    ],\n    \"CV\": [\n      \"learning to focus on expressing my thoughts clearly rather than sounding perfect.\"\n    ]\n  },\n  \"element_checks\": {\n    \"SA\": [\n      {\n        \"descriptor_element\": \"Names a real choice, motivation or limitation of her own\",\n        \"status\": \"supported\",\n        \"explanation\": \"She identifies her own limitation of overthinking before speaking due to fear of mistakes.\"\n      }\n    ],\n    \"IJ\": [\n      {\n        \"descriptor_element\": \"Has acted\",\n        \"status\": \"supported\",\n        \"explanation\": \"She practices speaking aloud, contributes to small groups, and solicits feedback.\"\n      },\n      {\n        \"descriptor_element\": \"reflected on the result\",\n        \"status\": \"supported\",\n        \"explanation\": \"She reflects that her progress is gradual and she is now more willing to speak despite nerves.\"\n      }\n    ],\n    \"CV\": [\n      {\n        \"descriptor_element\": \"Clear position or goal\",\n        \"status\": \"supported\",\n        \"explanation\": \"She clearly aims to speak more confidently by prioritizing clear expression over perfection.\"\n      },\n      {\n        \"descriptor_element\": \"at least one personal detail\",\n        \"status\": \"supported\",\n        \"explanation\": \"She includes personal details about her hesitation, fear of mistakes, and practice steps.\"\n      }\n    ]\n  },\n  \"reasoning\": {\n    \"SA\": \"The candidate clearly articulates an internal limitation causing her speaking anxiety, satisfying anchor 4.\",\n    \"IJ\": \"The candidate outlines concrete actions she already takes and evaluates the outcome of those efforts on her confidence, meeting both parts of anchor 8.\",\n    \"CV\": \"The response articulates a clear goal and includes genuine personal details about her habits and mindset, meeting anchor 4.\"\n  },\n  \"next_level_explanation\": {\n    \"SA\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Explains what she learned, with a concrete example\",\n      \"missing_elements\": [\n        \"concrete example\"\n      ],\n      \"explanation\": \"While she mentions what she is learning conceptually, she does not provide a concrete example illustrating a specific instance of learning.\"\n    },\n    \"IJ\": {\n      \"next_anchor_level\": null,\n      \"descriptor\": null,\n      \"missing_elements\": [],\n      \"explanation\": \"The response satisfies level 8; no higher level exists.\"\n    },\n    \"CV\": {\n      \"next_anchor_level\": 6,\n      \"descriptor\": \"Owns a clear stance; answers rooted in specific personal detail\",\n      \"missing_elements\": [\n        \"answers rooted in specific personal detail\"\n      ],\n      \"explanation\": \"The answer provides brief personal details, but the descriptions remain fairly general rather than deeply rooted in specific personal context or life experiences.\"\n    }\n  },\n  \"levels\": {\n    \"SA\": 4,\n    \"IJ\": 8,\n    \"CV\": 4\n  },\n  \"flags\": []\n}",
+      "attempts": 1,
+      "attempt_history": [
+        {
+          "attempt": 1,
+          "prompt_sha256": "a1f853bea118fff5a2b8ce3ad69b6a5c3866e83206a7b74d6c1264dd58320daf",
+          "validator_error": null,
+          "generation_config": {
+            "temperature": 0,
+            "response_mime_type": "application/json"
+          }
+        }
+      ],
+      "filled_prompt_sha256": "a1f853bea118fff5a2b8ce3ad69b6a5c3866e83206a7b74d6c1264dd58320daf",
+      "answer_sha256": "db6a7db8b39f9806ca65fb84b977518ab4eddbfdc84ef52750a3fac9e75511f8"
+    }
+  },
+  "unable_to_evaluate_count": 0,
+  "total_is_partial": false,
+  "written_total": 26.7,
+  "written_total_out_of": 40
+}

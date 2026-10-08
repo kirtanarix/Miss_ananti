@@ -16,7 +16,6 @@
         "2": "Generic self-description",
         "4": "Names a real choice, motivation or limitation of her own",
         "6": "Explains what she learned, with a concrete example",
-        # TODO_BD: SA level 8 asks for consistency across answers; Section 7 says "judging only that answer". Unresolved.
         "8": "Specific reflection showing how an experience changed what she does; consistent across answers"
       }
     },
@@ -61,12 +60,10 @@
         "2": "Slogans or stock phrases that could be anyone’s",
         "4": "Clear position or goal with at least one personal detail",
         "6": "Owns a clear stance; answers rooted in specific personal detail",
-        # TODO_BD: CV level 8 asks for consistency across answers; Section 7 says "judging only that answer". Unresolved.
         "8": "Consistent conviction across answers, distinctly her own, persuasive"
       }
     }
   },
-  # TODO_BD: Section 5 allows odd levels; Section 7 lists only 0/2/4/6/8. Unresolved.
   "level_instructions": "Each active cell is scored at one of five levels. Odd numbers may be used when an answer falls between two levels.",
   "weight_instructions": "Weights are percentages within each question; blank cells are not scored for that question. Each question carries equal weight: 20% of the written score, or 8 of the 40 marks.",
   "weight_matrix": {
